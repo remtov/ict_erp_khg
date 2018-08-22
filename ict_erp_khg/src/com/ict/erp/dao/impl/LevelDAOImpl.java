@@ -35,7 +35,7 @@ public class LevelDAOImpl implements LevelDAO{
 	}
 
 	@Override
-	public int insertLevel(List<LevelInfo> liList) throws SQLException {
+	public int insertLiList(List<LevelInfo> liList) throws SQLException {
 		String sql ="insert into level_info(lliNum, liLevel, liName, LiDesc)"; 
 		sql +="values(seq_liNum.nextval,?,?,?)";//물음표 사용자한테 받을 값
 		PreparedStatement ps = con.prepareStatement(sql);

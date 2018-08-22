@@ -1,6 +1,7 @@
 package com.ict.erp.service.impl;
 
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -31,24 +32,23 @@ public class LevelServiceImpl implements LevelService {
 	@Override
 	public Map<String, Object> insertNupdateLiList(Map<String, List<LevelInfo>> map) throws SQLException {
 		ldao.setConnection(DBCon.getCon());
+		Map<String,Object> rMap =new HashMap<String,Object>();
 		int cnt=0;
 		try {
 		cnt+=ldao.insertLiList(map.get("iList"));
 		cnt+=ldao.updateLiList(map.get("uList"));
-		DBcon.commit();
+		DBCon.commit();
 		rMap.put("cnt",cnt);
 		rMap.put("msg","정상적으로 저장되었습니다.");
-		
-			
-		}catch{
+		}catch(SQLException e){
 			rMap.put("cnt",0);
 			rMap.put("msg","저장이 실패하였습니다.");
 			throw e;
-			
+		
 		}finally {
 			DBCon.close();
 		}
-		
+		return rMap;
 	}
 
 	@Override

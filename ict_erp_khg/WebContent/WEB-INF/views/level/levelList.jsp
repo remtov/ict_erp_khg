@@ -45,7 +45,7 @@
 		</div>
 	</div>
 	<script>
-	var msg cnt= '${rMap.cnt}'
+	var cnt= '${rMap.cnt}';
 	if(cnt){
 		if(cnt>0){
 			alert('${rMap.msg}');
@@ -74,7 +74,7 @@
 	
 	function makeParam(name){
 		var objs = document.querySelectorAll('input[name='+name+']');
-		var param = ''
+		var param = '';
 		for(var i=0;i<objs.length;i++){
 			param += name + '='+ objs[i].value + '&';
 				
