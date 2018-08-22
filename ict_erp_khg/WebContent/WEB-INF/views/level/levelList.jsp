@@ -63,7 +63,7 @@
 		 html+='<td><input type="text" name="liDesc"></td>';
 		 html+='</tr>';
 		 var obj = document.querySelector("#liTbody");
-		 if(emptyList){
+		 if(emptyList==='true'){
 			 obj.innerHTML= html;
 			 emptyList = false;
 		 }else{
@@ -71,7 +71,7 @@
 		 }
 	}
 
-	
+
 	function makeParam(name){
 		var objs = document.querySelectorAll('input[name='+name+']');
 		var param = '';

@@ -36,7 +36,7 @@ public class LevelDAOImpl implements LevelDAO{
 
 	@Override
 	public int insertLiList(List<LevelInfo> liList) throws SQLException {
-		String sql ="insert into level_info(lliNum, liLevel, liName, LiDesc)"; 
+		String sql ="insert into level_info(liNum, liLevel, liName, liDesc)"; 
 		sql +="values(seq_liNum.nextval,?,?,?)";//물음표 사용자한테 받을 값
 		PreparedStatement ps = con.prepareStatement(sql);
 		int cnt =0;
@@ -44,6 +44,7 @@ public class LevelDAOImpl implements LevelDAO{
 			ps.setInt(1, li.getLiLevel());
 			ps.setString(2, li.getLiName());
 			ps.setString(3, li.getLiDesc());
+			
 			cnt+= ps.executeUpdate();
 			
 		}
@@ -62,8 +63,8 @@ public class LevelDAOImpl implements LevelDAO{
 		String sql ="update level_info"; 
 		sql +="set liLevel=?,";
 		sql +="liName=?,";
-		sql +="liDesc=?,";
-		sql +="where liNum=?,";
+		sql +="liDesc=?";
+		sql +="where liNum=?";
 		//물음표 사용자한테 받을 값
 		PreparedStatement ps = con.prepareStatement(sql);
 		int cnt =0;

@@ -36,12 +36,10 @@ public class LevelServlet extends HttpServlet {
 				request.setAttribute("liList", ls.getLiList(null));
 			} else if (cmd.equals("saveLevelList")) {
 				List<LevelInfo> iList = new ArrayList<LevelInfo>();
-
-				String[] liLevels = request.getParameterValues("liLevel");
 				String[] liNames = request.getParameterValues("liName");
-				String[] liDesces = request.getParameterValues("liDesces");
-		
-				for (int i = 0; i < liNames.length; i++) {
+				String[] liLevels = request.getParameterValues("liLevel");
+				String[] liDesces = request.getParameterValues("liDesc");
+		for (int i = 0; i < liNames.length; i++) {
 					int level = Integer.parseInt(liLevels[i]);
 					LevelInfo li = new LevelInfo(0, level, liNames[i], liDesces[i]);
 					iList.add(li);
@@ -49,8 +47,9 @@ public class LevelServlet extends HttpServlet {
 				Map<String, List<LevelInfo>> map = new HashMap<String, List<LevelInfo>>();
 				map.put("iList", iList);
 				map.put("uList", new ArrayList<LevelInfo>());
-				Map<String,Object>rMap = ls.insertNupdateLiList(map);
+				Map<String,Object>rMap = ls.insertNUpdateLiList(map);
 				request.setAttribute("rMap", rMap);
+				uri ="/views/level/levelList";
 				} else {
 				uri = "/views/notFound";
 			}

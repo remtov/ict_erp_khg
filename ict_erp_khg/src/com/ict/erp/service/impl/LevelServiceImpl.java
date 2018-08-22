@@ -26,11 +26,12 @@ public class LevelServiceImpl implements LevelService {
 			ls.getLiList(null);
 		} catch (SQLException e) {
 			e.printStackTrace();
+	
 		}
 	}
 
 	@Override
-	public Map<String, Object> insertNupdateLiList(Map<String, List<LevelInfo>> map) throws SQLException {
+	public Map<String, Object> insertNUpdateLiList(Map<String, List<LevelInfo>> map) throws SQLException {
 		ldao.setConnection(DBCon.getCon());
 		Map<String,Object> rMap =new HashMap<String,Object>();
 		int cnt=0;
