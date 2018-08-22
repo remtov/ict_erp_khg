@@ -8,6 +8,7 @@ import com.ict.erp.vo.LevelInfo;
 public interface LevelDAO {
 	public List<LevelInfo> selectLiList(LevelInfo li) throws SQLException;
 
+	public List<LevelInfo> selectLiListInf li) throws SQLException;
 	public int insertLevel(List<LevelInfo> liList) throws SQLException;
 
 	public int deleteLiList(int[] liNums) throws SQLException;
