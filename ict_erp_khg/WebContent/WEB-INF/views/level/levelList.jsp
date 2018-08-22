@@ -45,7 +45,15 @@
 		</div>
 	</div>
 	<script>
-	var emptyList = ${empty liList};
+	var msg cnt= '${rMap.cnt}'
+	if(cnt){
+		if(cnt>0){
+			alert('${rMap.msg}');
+		location.href='/level/levelList';
+		}
+	}
+	
+	var emptyList = '${empty liList}';
 
 	function addRow(){
 		 var html="<tr>";
@@ -78,7 +86,7 @@
 		var params = makeParam('liLevel');
 		params +=  makeParam('liName');
 		params +=  makeParam('liDesc');
-		alert(params);
+		location.href='/level/saveLevelList?'+params;
 	}
 	
 

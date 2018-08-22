@@ -24,38 +24,42 @@ public class LevelServlet extends HttpServlet {
 
 	private LevelService ls = new LevelServiceImpl();
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String uri = request.getRequestURI();
 		String cmd = ICTUtils.getCmd(uri);
 		uri = "/views" + uri;
 		try {
-			if(cmd==null|| cmd.equals("")) {
+			if (cmd == null || cmd.equals("")) {
 				uri = "/views/notFound";
-			}else if(cmd.equals("levelList")) {
+			} else if (cmd.equals("levelList")) {
 				request.setAttribute("liList", ls.getLiList(null));
-			}else if(cmd.equals("saveLevelList")){
+			} else if (cmd.equals("saveLevelList")) {
 				List<LevelInfo> iList = new ArrayList<LevelInfo>();
-				
+
 				String[] liNames = request.getParameterValues("liName");
 				String[] liLevels = request.getParameterValues("lilevel");
 				String[] liDesces = request.getParameterValues("liDesces");
-				for(int i=0;i<liNames.length;i++) {
+				for (int i = 0; i < liNames.length; i++) {
 					int level = Integer.parseInt(liLevels[i]);
-					LevelInfo li = new LevelInfo(0,level,liNames[i],liDesces[i]);
+					LevelInfo li = new LevelInfo(0, level, liNames[i], liDesces[i]);
 					iList.add(li);
-					
-					
+
 				}
-				Map<String,List<LevelInfo>> map = new HashMap<String,List<LevelInfo>>();
-						map.put("iList",iList);
-				map.put("uList",new ArrayList<LevelInfo>());
-							
-			
+				Map<String, List<LevelInfo>> map = new HashMap<String, List<LevelInfo>>();
+				map.put("iList", iList);
+				map.put("uList", new ArrayList<LevelInfo>());
+				Map<String,Object>rMap = ls.insertNupdateLiList(map);
+				request.setAttribute("rMap", rMap);
 				
-			}else {
+				
+				
+				
+
+			} else {
 				uri = "/views/notFound";
 			}
-		}catch(SQLException e) {
+		} catch (SQLException e) {
 			System.out.println(e);
 			request.setAttribute("error", e.getMessage());
 			uri = "/views/error";
