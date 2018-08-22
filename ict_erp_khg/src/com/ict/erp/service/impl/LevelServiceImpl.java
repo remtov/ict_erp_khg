@@ -52,7 +52,7 @@ public class LevelServiceImpl implements LevelService {
 	}
 
 	@Override
-	public Map<String, Object> deleteLiList(List<LevelInfo> liList) throws SQLException {
+	public Map<String, Object> deleteLiList(int[] liNums) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}

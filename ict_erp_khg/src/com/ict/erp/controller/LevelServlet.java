@@ -37,9 +37,10 @@ public class LevelServlet extends HttpServlet {
 			} else if (cmd.equals("saveLevelList")) {
 				List<LevelInfo> iList = new ArrayList<LevelInfo>();
 
-				String[] liNames = request.getParameterValues("liName");
 				String[] liLevels = request.getParameterValues("liLevel");
+				String[] liNames = request.getParameterValues("liName");
 				String[] liDesces = request.getParameterValues("liDesces");
+		
 				for (int i = 0; i < liNames.length; i++) {
 					int level = Integer.parseInt(liLevels[i]);
 					LevelInfo li = new LevelInfo(0, level, liNames[i], liDesces[i]);
