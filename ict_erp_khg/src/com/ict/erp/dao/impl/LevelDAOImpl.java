@@ -47,6 +47,7 @@ public class LevelDAOImpl implements LevelDAO{
 			cnt+= ps.executeUpdate();
 			
 		}
+		ps.close();//정석은 트라이캣치까지 써주는게 정석
 		return cnt;
 	}
 
@@ -58,7 +59,24 @@ public class LevelDAOImpl implements LevelDAO{
 
 	@Override
 	public int updateLiList(List<LevelInfo> liList) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		String sql ="update level_info"; 
+		sql +="set liLevel=?,";
+		sql +="liName=?,";
+		sql +="liDesc=?,";
+		sql +="where liNum=?,";
+		//물음표 사용자한테 받을 값
+		PreparedStatement ps = con.prepareStatement(sql);
+		int cnt =0;
+		for(LevelInfo li:liList) {
+			ps.setInt(1, li.getLiLevel());
+			ps.setString(2, li.getLiName());
+			ps.setString(3, li.getLiDesc());
+			ps.setInt(4, li.getLiNum());
+			cnt+= ps.executeUpdate();
+			
+		}
+		ps.close();//정석은 트라이캣치까지 써주는게 정석
+		return cnt;
+		
 	}
 }

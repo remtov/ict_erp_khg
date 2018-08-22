@@ -20,7 +20,7 @@
 						<th>레벨설명</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="liTbody">
 					<c:forEach items="${liList}" var="li">
 						<tr>
 							<td>${li.liNum}</td>
@@ -45,43 +45,43 @@
 		</div>
 	</div>
 	<script>
-var emtyList = ${empty liList};
+	var emptyList = ${empty liList};
 
-function addRow(){
-	if(emptyList){
-		var html="<tr>";
-	 html+='<td>&nbsp;</td>';
-	 html+='<td><input type="text" name="liLevel"></td>';
-	 html+='<td><input type="text" name="liName"></td>';
-	 html+='<td><input type="text" name="liDesc"></td>';
-	 html+='</tr>';
-	 var obj = document.queryselector("#liTbody");
-	 if(emptyList){
-		 obj.innerHTML= html;
-		 emptyList = false;
-	 }else{
-		 obj.innerHTML+= html;
-	 }
-		
+	function addRow(){
+		 var html="<tr>";
+		 html+='<td>&nbsp;</td>';
+		 html+='<td><input type="text" name="liLevel"></td>';
+		 html+='<td><input type="text" name="liName"></td>';
+		 html+='<td><input type="text" name="liDesc"></td>';
+		 html+='</tr>';
+		 var obj = document.querySelector("#liTbody");
+		 if(emptyList){
+			 obj.innerHTML= html;
+			 emptyList = false;
+		 }else{
+			 obj.innerHTML+= html;
+		 }
 	}
+
+	
 	function makeParam(name){
-	var objs = document.querySelectorAll('input[name='+name+']');
-	var param = ''
-	for(var i=0;i<objs.length;i++){
-		param += name + '='+ objs[i].value + '&';
-			
-	}
-	return param;
+		var objs = document.querySelectorAll('input[name='+name+']');
+		var param = ''
+		for(var i=0;i<objs.length;i++){
+			param += name + '='+ objs[i].value + '&';
+				
 		}
+		return param;
+	}
 
 	function saveLevel(){
 		var params = makeParam('liLevel');
 		params +=  makeParam('liName');
 		params +=  makeParam('liDesc');
 		alert(params);
-		}
+	}
 	
-}
+
 
 </script>
 	<jsp:include page="/WEB-INF/views/menu/bottom.jsp" />
