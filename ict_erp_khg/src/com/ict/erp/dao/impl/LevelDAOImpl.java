@@ -12,6 +12,12 @@ import com.ict.erp.dao.LevelDAO;
 import com.ict.erp.vo.LevelInfo;
 
 public class LevelDAOImpl implements LevelDAO{
+	
+	private Connection con;
+	
+	public void setConnection(Connection con) {
+		this.con = con;
+	}
 
 	@Override
 	public List<LevelInfo> selectLiList(LevelInfo li) throws SQLException {
@@ -30,13 +36,23 @@ public class LevelDAOImpl implements LevelDAO{
 
 	@Override
 	public int insertLevel(List<LevelInfo> liList) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		String sql ="insert into level_info(lliNum, liLevel, liName, LiDesc)"; 
+		sql +="values(seq_liNum.nextval,?,?,?)";//물음표 사용자한테 받을 값
+		PreparedStatement ps = con.prepareStatement(sql);
+		int cnt =0;
+		for(LevelInfo li:liList) {
+			ps.setInt(1, li.getLiLevel());
+			ps.setString(2, li.getLiName());
+			ps.setString(3, li.getLiDesc());
+			cnt+= ps.executeUpdate();
+			
+		}
+		return cnt;
 	}
 
 	@Override
 	public int deleteLiList(int[] liNums) throws SQLException {
-		// TODO Auto-generated method stub
+	
 		return 0;
 	}
 
