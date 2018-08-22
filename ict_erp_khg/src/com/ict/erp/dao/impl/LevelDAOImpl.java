@@ -27,4 +27,22 @@ public class LevelDAOImpl implements LevelDAO{
 		DBCon.close();
 		return liList;
 	}
+
+	@Override
+	public int insertLevel(List<LevelInfo> liList) throws SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteLiList(int[] liNums) throws SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateLiList(List<LevelInfo> liList) throws SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
