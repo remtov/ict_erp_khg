@@ -63,22 +63,19 @@ public class DBCon {
 		}
 		con = null;
 	}
-public static void commit() {
-	try {
-		con.commit();
-	} catch (SQLException e) {
-		
-		e.printStackTrace();
-	}
-}
 	
+	public static void commit() {
+		try {
+			con.commit();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 	public static void rollback() {
 		try {
 			con.rollback();
 		} catch (SQLException e) {
-			
 			e.printStackTrace();
 		}
-}
-
+	}
 }

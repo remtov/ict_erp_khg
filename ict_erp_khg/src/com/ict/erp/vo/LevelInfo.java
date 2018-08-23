@@ -5,8 +5,6 @@ public class LevelInfo {
 	private int liLevel;
 	private String liName;
 	private String liDesc;
-	
-	
 	public LevelInfo(int liNum, int liLevel, String liName, String liDesc) {
 		super();
 		this.liNum = liNum;

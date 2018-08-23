@@ -11,9 +11,8 @@ import com.ict.erp.dao.impl.LevelDAOImpl;
 import com.ict.erp.service.LevelService;
 import com.ict.erp.vo.LevelInfo;
 
-public class LevelServiceImpl implements LevelService {
+public class LevelServiceImpl implements LevelService{
 	private LevelDAO ldao = new LevelDAOImpl();
-
 	@Override
 	public List<LevelInfo> getLiList(LevelInfo li) throws SQLException {
 		// TODO Auto-generated method stub
@@ -26,26 +25,26 @@ public class LevelServiceImpl implements LevelService {
 			ls.getLiList(null);
 		} catch (SQLException e) {
 			e.printStackTrace();
-	
 		}
 	}
 
 	@Override
 	public Map<String, Object> insertNUpdateLiList(Map<String, List<LevelInfo>> map) throws SQLException {
 		ldao.setConnection(DBCon.getCon());
-		Map<String,Object> rMap =new HashMap<String,Object>();
-		int cnt=0;
-		try {
-		cnt+=ldao.insertLiList(map.get("iList"));
-		cnt+=ldao.updateLiList(map.get("uList"));
-		DBCon.commit();
-		rMap.put("cnt",cnt);
-		rMap.put("msg","정상적으로 저장되었습니다.");
-		}catch(SQLException e){
-			rMap.put("cnt",0);
-			rMap.put("msg","저장이 실패하였습니다.");
-			throw e;
+		Map<String,Object> rMap = new HashMap<String,Object>();
 		
+		int cnt = 0;
+		try {
+			cnt += ldao.insertLiList(map.get("iList"));
+			cnt += ldao.updateLiList(map.get("uList"));
+			DBCon.commit();
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "정상적으로 저장되었습니다.");
+		}catch(SQLException e) {
+			DBCon.rollback();
+			rMap.put("cnt", 0);
+			rMap.put("msg", "저장이 실패하였습니다.");
+			throw e;
 		}finally {
 			DBCon.close();
 		}
@@ -54,7 +53,21 @@ public class LevelServiceImpl implements LevelService {
 
 	@Override
 	public Map<String, Object> deleteLiList(int[] liNums) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		ldao.setConnection(DBCon.getCon());
+		Map<String,Object> rMap = new HashMap<String,Object>();
+		try {
+			int cnt = ldao.deleteLiList(liNums);
+			DBCon.commit();
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "정상적으로 삭제되었습니다.");
+		}catch(SQLException e) {
+			DBCon.rollback();
+			rMap.put("cnt", 0);
+			rMap.put("msg", "저장이 실패하였습니다.");
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+		return rMap;
 	}
 }
