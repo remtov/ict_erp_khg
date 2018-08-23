@@ -35,7 +35,7 @@ public class LevelServlet extends HttpServlet {
 				LevelInfo li = null;
 				String scType = request.getParameter("scType");
 				String scText = request.getParameter("scText");
-				if(scType!=null) {
+				if(scType!=null && scText!=null && !scText.equals("")) {
 					if(scType.equals("liName")) {
 						li = new LevelInfo(0,0,scText,null);
 					}else {
@@ -56,15 +56,30 @@ public class LevelServlet extends HttpServlet {
 				String[] liNames = request.getParameterValues("liName");
 				String[] liLevels = request.getParameterValues("liLevel");
 				String[] liDesces = request.getParameterValues("liDesc");
-				for(int i=0;i<liNames.length;i++) {
-					int level = Integer.parseInt(liLevels[i]);
-					LevelInfo li = new LevelInfo(0,level,liNames[i],liDesces[i]);
-					iList.add(li);
+				if(liNames!=null) {
+					for(int i=0;i<liNames.length;i++) {
+						int level = Integer.parseInt(liLevels[i]);
+						LevelInfo li = new LevelInfo(0,level,liNames[i],liDesces[i]);
+						iList.add(li);
+					}
+				}
+				String[] liNumStrs =  request.getParameterValues("liNum");
+				liNames = request.getParameterValues("uLiName");
+				liLevels = request.getParameterValues("uLiLevel");
+				liDesces = request.getParameterValues("uLiDesc");
+				List<LevelInfo> uList = new ArrayList<LevelInfo>();
+				if(liNumStrs!=null) {
+					for(int i=0;i<liNumStrs.length;i++) {
+						int num = Integer.parseInt(liNumStrs[i]);
+						int level = Integer.parseInt(liLevels[i]);
+						LevelInfo li = new LevelInfo(num,level,liNames[i],liDesces[i]);
+						uList.add(li);
+					}
 				}
 				Map<String,List<LevelInfo>> map = 
 						new HashMap<String,List<LevelInfo>>();
 				map.put("iList", iList);
-				map.put("uList", new ArrayList<LevelInfo>());
+				map.put("uList", uList);
 				Map<String,Object> rMap = ls.insertNUpdateLiList(map);
 				request.setAttribute("rMap", rMap);
 				uri = "/views/level/levelList";
