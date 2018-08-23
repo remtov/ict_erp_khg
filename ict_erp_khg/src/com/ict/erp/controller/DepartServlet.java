@@ -8,26 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = "/depart/*", name = "DepartServlet",loadOnStartup=1)
+@WebServlet(
+		urlPatterns = "/depart/*", 
+		name = "DepartServlet"	
+)
 
 public class DepartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
-	public DepartServlet() {
-		super();
+protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
 	}
 
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
 	}
 
