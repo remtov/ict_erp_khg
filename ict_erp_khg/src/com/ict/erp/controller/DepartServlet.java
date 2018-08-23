@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class DepartServlet
  */
-@WebServlet(
-		urlPatterns = "/depart/*", 
-		name = "DepartServlet"
-		)
+@WebServlet(urlPatterns = "/depart/*", name = "DepartServlet")
 
 public class DepartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -27,11 +24,12 @@ public class DepartServlet extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		TestServlet ts = (TestServlet)this.getServletContext().ggggggggggggg
-				
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
