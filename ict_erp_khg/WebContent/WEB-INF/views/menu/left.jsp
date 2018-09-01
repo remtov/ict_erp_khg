@@ -19,12 +19,24 @@ String rPath = request.getContextPath();
                 <li>
                      <a href="<%=rPath%>/depart/departList">부서관리</a>
                 </li>
+                
+                <li>
+                     <a href="<%=rPath%>/music/musicChart">뮤직챠트</a>
+                </li>
+                
+                <li>
+                     <a href="<%=rPath%>/tiket/tiketMovie">영화티켓</a>
+                </li>
+                
+ 
                 <li>
                     <a href="#">이력서</a>
                 </li>
+                
                 <li>
                     <a href="#">Git</a>
                 </li>
+                
                 <li>
                     <a href="#">Contact</a>
                 </li>
