@@ -19,3 +19,23 @@ String uri = request.getRequestURI();
     <script src="<%=rPath%>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="<%=rPath%>/vendor/common.js"></script>
 </head>
+
+<script>
+	window.addEventListener('load',function(){
+		var btns = document.querySelectorAll('button[data-page]');
+		for(var i=0,max=btns.length;i<max;i++){
+			btns[i].setAttribute('type','button');
+			btns[i].onclick = function(){
+				location.href = this.getAttribute('data-page');
+			}
+		}
+		btns = document.querySelectorAll('button[data-action]');
+		for(var i=0,max=btns.length;i<max;i++){
+			btns[i].setAttribute('type','button');
+			btns[i].onclick = function(){
+				this.form.action = this.getAttribute('data-action');
+				this.form.submit();
+			}
+		}
+	});
+</script>

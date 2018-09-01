@@ -11,6 +11,13 @@
 		<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
 		</div>
 		<div style="margin:5px;">
+			<select name="liNum">
+				<option>선택</option>
+				
+			<c:forEach items="${liList}" var="li">
+				<option vale="${li.liNum}">${li.liName}</option>
+			</c:forEach>
+			</select>
 			<select name="scType">
 				<option value="liName">레벨명</option>
 				<option value="liDesc">레벨설명</option>
@@ -53,6 +60,7 @@
 	</div>
 </div>
 <script>
+	
 	$(document).ready(function(){
 		document.querySelector('input[name=scText]').focus(); 
 	});

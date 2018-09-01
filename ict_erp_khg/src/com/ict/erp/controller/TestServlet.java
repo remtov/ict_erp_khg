@@ -19,6 +19,7 @@ public class TestServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String uri = request.getRequestURI();
+		System.out.println(uri);
 		String cmd = ICTUtils.getCmd(uri);
 		try {
 			if(cmd.equals("testList")) {

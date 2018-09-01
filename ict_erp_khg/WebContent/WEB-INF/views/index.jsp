@@ -9,6 +9,6 @@
 		<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
 		</div>
 	인덱스 파일입니다.
-</div>
+	</div>
 </div>
 <jsp:include page="/WEB-INF/views/menu/bottom.jsp" />
