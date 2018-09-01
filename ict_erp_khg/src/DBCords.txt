@@ -12,6 +12,7 @@ grant create table,
       create trigger to system;
 
 
+
 CREATE TABLE board (
   idx int,
   writer varchar(255),
@@ -23,9 +24,17 @@ CREATE TABLE board (
 -- primary key (idx) => idx은 유니크한 값을 갖는다. 다른 값과 겹치면 안 된다
 
 
--- 다음과 같이 한 줄로 써도 됩니다.
+-- 다음과 같이 한 줄로 써도 됩니다.테이블권한
 grant select, insert, update, delete on sys.board to system;
-
+grant select, insert, update, delete on ictu.MUSIC_CHART to ICTU;
+grant select, insert, update, delete on ictu.MUSIC_CHART to ICTU;
 
 -- SEQUENCE 권한 부여
 GRANT SELECT, ALTER on sys.comment_seq to system;
+
+GRANT SELECT, ALTER on ictu.SEQ_MUSIC_CHART_MCNUM to ictu;
+
+
+
+시퀀스생성--
+CREATE SEQUENCE SEQ_music_chart_mcNum INCREMENT BY 1 START WITH 1;
