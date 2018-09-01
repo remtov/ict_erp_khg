@@ -1,0 +1,31 @@
+grant connect to <user>;
+grant create table to <user>;
+grant create sequence to <user>;
+grant create trigger to <user>;
+grant select,insert,update,delete on <user1>.<table> to <user2>;
+
+-- 필자의 경우 user를 system으로 사용하였습니다.
+-- create 권한 부여
+grant connect to system;
+grant create table,
+      create sequence,
+      create trigger to system;
+
+
+CREATE TABLE board (
+  idx int,
+  writer varchar(255),
+  subject varchar(255),
+  content clob,
+  reg_date timestamp,
+  primary key (idx)
+);
+-- primary key (idx) => idx은 유니크한 값을 갖는다. 다른 값과 겹치면 안 된다
+
+
+-- 다음과 같이 한 줄로 써도 됩니다.
+grant select, insert, update, delete on sys.board to system;
+
+
+-- SEQUENCE 권한 부여
+GRANT SELECT, ALTER on sys.comment_seq to system;
