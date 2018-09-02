@@ -12,6 +12,8 @@ public class TicketMovie {
 	private String tmImg;
 	
 	public TicketMovie() {}
+	
+	
 	public TicketMovie(Integer tmNum, String tmName, Integer tmPrice, String tmStartDat, String tmEndDat,
 			String tmCredat, String tmDesc, Integer tmCnt, String tmImg) {
 		super();

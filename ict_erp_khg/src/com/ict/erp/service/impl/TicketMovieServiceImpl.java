@@ -6,10 +6,10 @@ import java.util.List;
 import com.ict.erp.common.DBCon;
 import com.ict.erp.dao.TicketMovieDAO;
 import com.ict.erp.dao.impl.TicketMovieDAOImpl;
-import com.ict.erp.service.TicketMovieService;
+import com.ict.erp.service.TicketService;
 import com.ict.erp.vo.TicketMovie;
 
-public class TicketMovieServiceImpl implements TicketMovieService {
+public class TicketMovieServiceImpl implements TicketService {
 	private TicketMovieDAO tmdao = new TicketMovieDAOImpl();
 	
 	@Override

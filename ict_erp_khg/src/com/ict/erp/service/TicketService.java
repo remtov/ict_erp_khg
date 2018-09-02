@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.ict.erp.vo.TicketMovie;
 
-public interface TicketMovieService {
+public interface TicketService {
 	public List<TicketMovie> selectTicketMoiveList(TicketMovie ticket) throws SQLException;
 	public TicketMovie selectTicketMoive(TicketMovie ticket) throws SQLException;
 	public int insertTicketMoive(TicketMovie ticket) throws SQLException;

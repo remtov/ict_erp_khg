@@ -15,25 +15,25 @@
 							<th>종료일</th>
 							<th>영화설명</th>
 							<th>영화포스터</th>
-
 						</tr>
 					</thead>
-					<tbody id='menuTbody'>
-						<c:forEach items="${ticketMovieList}" var="ticketMovie">
+					<tbody id='ticketTbody'>
+						<c:forEach items="${ticketList}" var="ticket">
 							<tr>
-								<td>${ticketMovie.tmNum}</td>
-								<td>${ticketMovie.tmName}</td>
-								<td>${ticketMovie.tmPrice}</td>
-								<td>${ticketMovie.tmStartDat}</td>
-								<td>${ticketMovie.tmEndDat}</td>
-								<td>${ticketMovie.tmDesc}</td>
-								<td>${ticketMovie.tmImg}</td>
+								<td>${ticket.tmNum}</td>
+								<td>${ticket.tmName}</td>
+								<td>${ticket.tmPrice}</td>
+								<td>${ticket.tmStartDat}</td>
+								<td>${ticket.tmEndDat}</td>
+								<td>${ticket.tmDesc}</td>
+								<td>${ticket.tmImg}</td>
 
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
 				<button data-page="/views/ticketMovie/ticketMovieInsert">영화입력</button>
+			
 			</div>
 		</div>
 	</div>
