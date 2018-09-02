@@ -14,10 +14,10 @@ public class TicketServiceImpl implements TicketService {
 	private TicketDAO tmdao = new TicketDAOImpl();
 	
 	@Override
-	public List<TicketMovie> selectTicketList(TicketMovie ticket) throws SQLException {
+	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException {
 		try {
 			tmdao.setConnection(DBCon.getCon());
-			return tmdao.selectTicketMovieList(ticket);
+			return tmdao.selectTicketMovieList(tm);
 		}catch(SQLException e) {
 			throw e;
 		}finally {
@@ -27,28 +27,40 @@ public class TicketServiceImpl implements TicketService {
 
 
 	
+
+
 	@Override
-	public TicketMovie selectTicket(TicketMovie ticket) throws SQLException {
+	public TicketMovie selectTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+
+
 	@Override
-	public int insertTicket(TicketMovie ticket) throws SQLException {
+	public int insertTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
+
+
 	@Override
-	public int updateTicket(TicketMovie ticket) throws SQLException {
+	public int updateTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
+
+
 	@Override
-	public int deleteTicket(TicketMovie ticket) throws SQLException {
+	public int deleteTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 }
+
+
+
+
+

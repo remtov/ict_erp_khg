@@ -7,9 +7,10 @@ import java.util.List;
 import com.ict.erp.vo.TicketMovie;
 
 public interface TicketService {
-	public List<TicketMovie> selectTicketList(TicketMovie ticket) throws SQLException;
-	public TicketMovie selectTicket(TicketMovie ticket) throws SQLException;
-	public int insertTicket(TicketMovie ticket) throws SQLException;
-	public int updateTicket(TicketMovie ticket) throws SQLException;
-	public int deleteTicket(TicketMovie ticket) throws SQLException;
+
+	public TicketMovie selectTm(TicketMovie tm) throws SQLException;
+	public int insertTm(TicketMovie tm) throws SQLException;
+	public int updateTm(TicketMovie tm) throws SQLException;
+	public int deleteTm(TicketMovie tm) throws SQLException;
+	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException;
 }

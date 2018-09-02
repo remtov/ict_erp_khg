@@ -18,15 +18,15 @@
 						</tr>
 					</thead>
 					<tbody id='ticketTbody'>
-						<c:forEach items="${ticketList}" var="ticket">
+						<c:forEach items="${tmList}" var="tm">
 							<tr>
-								<td>${ticket.tmNum}</td>
-								<td>${ticket.tmName}</td>
-								<td>${ticket.tmPrice}</td>
-								<td>${ticket.tmStartDat}</td>
-								<td>${ticket.tmEndDat}</td>
-								<td>${ticket.tmDesc}</td>
-								<td>${ticket.tmImg}</td>
+								<td>${tm.tmNum}</td>
+								<td>${tm.tmName}</td>
+								<td>${tm.tmPrice}</td>
+								<td>${tm.tmStartDat}</td>
+								<td>${tm.tmEndDat}</td>
+								<td>${tm.tmDesc}</td>
+								<td>${tm.tmImg}</td>
 
 							</tr>
 						</c:forEach>
