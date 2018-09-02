@@ -38,3 +38,25 @@ GRANT SELECT, ALTER on ictu.SEQ_MUSIC_CHART_MCNUM to ictu;
 
 시퀀스생성--
 CREATE SEQUENCE SEQ_music_chart_mcNum INCREMENT BY 1 START WITH 1;
+
+
+4. 테이블 컬럼 이름 변경하기(ALTER TABLE RENAME)
+
+[문법] ALTER TABLE 테이블명 RENAME COLUMN 원래컬럼명 TO 바꿀컬럼명;
+
+( EX ) USER라는 테이블에 USER_NAME 이라는 컬럼을 USER_FIRST_NAME으로 변경할 때
+
+-> ALTER TABLE USER RENAME COLUMN USER_NAME TO USER_FIRST_NAME;
+
+
+
+2. 테이블 컬럼 수정하기(ALTER TABLE MODIFY)
+
+[문법] ALTER TABLE 테이블명 MODIFY(컬럼명 테이타타입(사이즈));
+
+( EX ) USER라는 테이블에 USER_AGE 라는 컬럼을 NUNBER(3) 타입으로 수정할 때
+
+-> ALTER TABLE USER MODIFY(USER_AGE NUMBER(3));
+
+
+
