@@ -7,10 +7,10 @@ import java.util.List;
 import com.ict.erp.vo.TicketMovie;
 
 public interface TicketDAO extends CommonDAO{
-	public List<TicketMovie> selectTicketMovieList(TicketMovie ticket) throws SQLException;
-	public TicketMovie selectMusic(TicketMovie ticket) throws SQLException;
-	public int insertMusic(TicketMovie ticket) throws SQLException;
-	public int updateMusic(TicketMovie ticket) throws SQLException;
-	public int deleteMusic(TicketMovie ticket) throws SQLException;
+	public List<TicketMovie> selectTicketMovieList(TicketMovie ti) throws SQLException;
+	public TicketMovie selectMovie(TicketMovie ti) throws SQLException;
+	public int insertMovie(TicketMovie ti) throws SQLException;
+	public int updateMovie(TicketMovie ti) throws SQLException;
+	public int deleteMovie(TicketMovie ti) throws SQLException;
 
 }

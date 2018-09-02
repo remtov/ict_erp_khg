@@ -40,26 +40,24 @@ public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
 
 
 
+	
 	@Override
-	public TicketMovie selectMusic(TicketMovie ticket) throws SQLException {
+	public TicketMovie selectMovie(TicketMovie ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
-	public int insertMusic(TicketMovie ticket) throws SQLException {
+	public int insertMovie(TicketMovie ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int updateMusic(TicketMovie ticket) throws SQLException {
+	public int updateMovie(TicketMovie ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int deleteMusic(TicketMovie ticket) throws SQLException {
+	public int deleteMovie(TicketMovie ti) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
