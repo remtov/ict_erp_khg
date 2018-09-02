@@ -1,11 +1,12 @@
-package com.ict.erp.dao;
+package com.ict.erp.service;
 
 import java.sql.SQLException;
 import java.util.List;
 
+
 import com.ict.erp.vo.TicketMovie;
 
-public interface TicketDAO extends CommonDAO{
+public interface TicketService2 {
 	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException;
 	public TicketMovie selectTm(TicketMovie tm) throws SQLException;
 	public int insertTm(TicketMovie tm) throws SQLException;

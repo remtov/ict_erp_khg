@@ -3,7 +3,6 @@ package com.ict.erp.service;
 import java.sql.SQLException;
 import java.util.List;
 
-
 import com.ict.erp.vo.TicketMovie;
 
 public interface TicketService {
@@ -12,5 +11,4 @@ public interface TicketService {
 	public int insertTm(TicketMovie tm) throws SQLException;
 	public int updateTm(TicketMovie tm) throws SQLException;
 	public int deleteTm(TicketMovie tm) throws SQLException;
-
 }
