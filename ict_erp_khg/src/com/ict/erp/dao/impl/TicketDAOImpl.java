@@ -12,11 +12,12 @@ import com.ict.erp.vo.MusicChart;
 import com.ict.erp.vo.TicketMovie;
 
 public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
-	private static String SELECT_TICKETMOVIE_LIST = "select * from ticket_movie ";
+	private static String SELECT_TICKET_LIST = "select * from ticket_movie ";
+	
 	@Override
-	public List<TicketMovie> selectTicketMovieList(TicketMovie tiket) throws SQLException {
+	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException {
 		try {
-			ps = con.prepareStatement(SELECT_TICKETMOVIE_LIST);
+			ps = con.prepareStatement(SELECT_TICKET_LIST);
 			rs = ps.executeQuery();
 			return IBean.convertList(rs, TicketMovie.class);
 		}catch(SQLException e) {
@@ -40,24 +41,23 @@ public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
 
 
 
-	
 	@Override
-	public TicketMovie selectMovie(TicketMovie ti) throws SQLException {
+	public TicketMovie selectTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	@Override
-	public int insertMovie(TicketMovie ti) throws SQLException {
+	public int insertTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 	@Override
-	public int updateMovie(TicketMovie ti) throws SQLException {
+	public int updateTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 	@Override
-	public int deleteMovie(TicketMovie ti) throws SQLException {
+	public int deleteTm(TicketMovie tm) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}

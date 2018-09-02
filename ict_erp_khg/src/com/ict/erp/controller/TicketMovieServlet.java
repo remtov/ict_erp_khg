@@ -101,13 +101,10 @@ public class TicketMovieServlet extends HttpServlet {
 			TicketMovie tm = IBean.parseRequest(req, TicketMovie.class);
 			log.debug(tm);
 			// 클라이언트의 요청이 musicInsert일경우(uri : localhost/music/musicInsert)
-			if (cmd.equals("ticketInsert")) {
-				// 뮤직서비스에서 music목록을 인서트 함수를 호출해준다.
-				// cnt라는 키값으로 저장된 로우갯수를 저장한다.(1건일경우 1이여야 정상)
-				req.setAttribute("cnt", ts.insertTm(tm));
-			}
+		
 
 			if (cmd.equals("ticketMovieInsert")) {
+				req.setAttribute("cnt", ts.insertTm(tm));
 				if (!ServletFileUpload.isMultipartContent(req)) {
 					throw new ServletException("폼 인크립트가 파일업로드에 적합하지 않습니다.");
 				}
@@ -144,8 +141,8 @@ public class TicketMovieServlet extends HttpServlet {
 			throw new ServletException(e);
 		}
 		// 최하단에 있는 doService 메소드를 호출한다.
-//		doService(req, res);
-		 doGet(req, res);
+	doService(req, res);
+//		 doGet(req, res);
 	}
 
 
