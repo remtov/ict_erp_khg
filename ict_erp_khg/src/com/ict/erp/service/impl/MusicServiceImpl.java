@@ -12,10 +12,10 @@ import com.ict.erp.vo.MusicChart;
 public class MusicServiceImpl implements MusicService {
 	private MusicDAO mdao = new MusicDAOImpl();
 	@Override
-	public List<MusicChart> selectMusicList(MusicChart menu) throws SQLException {
+	public List<MusicChart> selectMusicList(MusicChart music) throws SQLException {
 		try {
 			mdao.setConnection(DBCon.getCon());
-			return mdao.selectMusicList(menu);
+			return mdao.selectMusicList(music);
 		}catch(SQLException e) {
 			throw e;
 		}finally {
@@ -24,25 +24,25 @@ public class MusicServiceImpl implements MusicService {
 	}
 
 	@Override
-	public MusicChart selectMusic(MusicChart menu) throws SQLException {
+	public MusicChart selectMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int insertMusic(MusicChart menu) throws SQLException {
+	public int insertMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateMusic(MusicChart menu) throws SQLException {
+	public int updateMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteMusic(MusicChart menu) throws SQLException {
+	public int deleteMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
