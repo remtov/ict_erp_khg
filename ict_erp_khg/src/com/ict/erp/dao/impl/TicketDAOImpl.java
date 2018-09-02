@@ -6,11 +6,12 @@ import java.util.List;
 
 import com.ict.erp.common.IBean;
 import com.ict.erp.dao.MusicDAO;
-import com.ict.erp.dao.TicketMovieDAO;
+import com.ict.erp.dao.TicketDAO;
+
 import com.ict.erp.vo.MusicChart;
 import com.ict.erp.vo.TicketMovie;
 
-public class TicketMovieDAOImpl extends CommonDAOImpl implements TicketMovieDAO {
+public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
 	private static String SELECT_TICKETMOVIE_LIST = "select * from ticket_movie ";
 	@Override
 	public List<TicketMovie> selectTicketMovieList(TicketMovie tiket) throws SQLException {

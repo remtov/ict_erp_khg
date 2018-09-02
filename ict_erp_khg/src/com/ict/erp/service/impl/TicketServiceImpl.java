@@ -4,16 +4,17 @@ import java.sql.SQLException;
 import java.util.List;
 
 import com.ict.erp.common.DBCon;
-import com.ict.erp.dao.TicketMovieDAO;
-import com.ict.erp.dao.impl.TicketMovieDAOImpl;
+import com.ict.erp.dao.TicketDAO;
+
+import com.ict.erp.dao.impl.TicketDAOImpl;
 import com.ict.erp.service.TicketService;
 import com.ict.erp.vo.TicketMovie;
 
-public class TicketMovieServiceImpl implements TicketService {
-	private TicketMovieDAO tmdao = new TicketMovieDAOImpl();
+public class TicketServiceImpl implements TicketService {
+	private TicketDAO tmdao = new TicketDAOImpl();
 	
 	@Override
-	public List<TicketMovie> selectTicketMoiveList(TicketMovie ticket) throws SQLException {
+	public List<TicketMovie> selectTicketList(TicketMovie ticket) throws SQLException {
 		try {
 			tmdao.setConnection(DBCon.getCon());
 			return tmdao.selectTicketMovieList(ticket);
@@ -24,26 +25,28 @@ public class TicketMovieServiceImpl implements TicketService {
 		}
 	}
 
+
+	
 	@Override
-	public TicketMovie selectTicketMoive(TicketMovie ticket) throws SQLException {
+	public TicketMovie selectTicket(TicketMovie ticket) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int insertTicketMoive(TicketMovie ticket) throws SQLException {
+	public int insertTicket(TicketMovie ticket) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateTicketMoive(TicketMovie ticket) throws SQLException {
+	public int updateTicket(TicketMovie ticket) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteTicketMoive(TicketMovie ticket) throws SQLException {
+	public int deleteTicket(TicketMovie ticket) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
