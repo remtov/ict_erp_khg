@@ -8,14 +8,14 @@
 			<div class="container">
 				<table class="table table-bordered">
 					<thead>
-
-						<th>영화이름</th>
-						<th>티켓가격</th>
-						<th>상영일</th>
-						<th>종료일</th>
-						<th>영화설명</th>
-						<th>영화포스터</th>
 						<tr>
+							<th>영화이름</th>
+							<th>티켓가격</th>
+							<th>상영일</th>
+							<th>종료일</th>
+							<th>영화설명</th>
+							<th>영화포스터</th>
+
 						</tr>
 					</thead>
 					<tbody id='menuTbody'>

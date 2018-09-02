@@ -48,6 +48,7 @@
     <servlet-name>MemberServlet</servlet-name>
     <url-pattern>/member/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>MusicServlet</servlet-name>
     <servlet-class>com.ict.erp.controller.MusicServlet</servlet-class>
@@ -57,6 +58,7 @@
     <url-pattern>/music/*</url-pattern>
   </servlet-mapping>
   <servlet>
+  
     <servlet-name>TicketMovieServlet</servlet-name>
     <servlet-class>com.ict.erp.controller.TicketMovieServlet</servlet-class>
   </servlet>
@@ -64,6 +66,9 @@
     <servlet-name>TicketMovieServlet</servlet-name>
     <url-pattern>/ticketMovie/*</url-pattern>
   </servlet-mapping>
+  
+  
+  <!-- 오류 -->
   <error-page>
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404.jsp</location>
@@ -72,6 +77,9 @@
     <error-code>500</error-code>
     <location>/WEB-INF/views/error/500.jsp</location>
   </error-page>
+  
+  
+  <!-- 필터 -->
   <filter>
     <filter-name>AuthFilter</filter-name>
     <filter-class>com.ict.erp.filer.AuthFilter</filter-class>
