@@ -25,7 +25,7 @@ String rPath = request.getContextPath();
                 </li>
                 
                 <li>
-                     <a href="<%=rPath%>/ticket/ticketMovie">영화티켓</a>
+                     <a href="<%=rPath%>/ticketMovie/ticketMovie">영화티켓</a>
                 </li>
                 
  
