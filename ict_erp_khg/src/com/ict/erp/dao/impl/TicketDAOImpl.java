@@ -9,6 +9,7 @@ import com.ict.erp.vo.TicketMovie;
 
 public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
 	private static String SELECT_TM_LIST = "select * from ticket_movie ";
+	
 	@Override
 	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException {
 		try {
