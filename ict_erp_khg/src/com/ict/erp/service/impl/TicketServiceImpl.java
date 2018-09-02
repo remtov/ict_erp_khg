@@ -17,7 +17,7 @@ public class TicketServiceImpl implements TicketService {
 	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException {
 		try {
 			tmdao.setConnection(DBCon.getCon());
-			return tmdao.selectTicketMovieList(tm);
+			return tmdao.selectTmList(tm);
 		}catch(SQLException e) {
 			throw e;
 		}finally {
