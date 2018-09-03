@@ -11,7 +11,7 @@
 					<tr>
 		
 						<th>번호</th>
-						<th>영화이름</th>
+						<th>영화제목</th>
 						<th>티켓가격</th>
 						<th>상영일</th>
 						<th>종료일</th>
@@ -24,7 +24,7 @@
 				<c:forEach items="${tmList}" var="tm">
 					<tr>
 						<td>${tm.tmNum}</td>
-						<td>${tm.tmName}</td>
+						<td><a href="/ticketMovie/ticketMovieView=${tm.tmNum}">${tm.tmName}</a></td>
 						<td>${tm.tmPrice}</td>
 						<td>${tm.tmStartDat}</td>
 						<td>${tm.tmEndDat}</td>
