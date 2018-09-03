@@ -26,8 +26,8 @@
 						<td>${tm.tmNum}</td>
 						<td>${tm.tmName}</td>
 						<td>${tm.tmPrice}</td>
-						<td>${tm.tmStratdat}</td>
-						<td>${tm.tmEnddat}</td>
+						<td>${tm.tmStartDat}</td>
+						<td>${tm.tmEndDat}</td>
 						<td>${tm.tmDesc}</td>
 						<td>${tm.tmCnt}</td>
 						<td>${tm.tmImg}</td>
@@ -35,7 +35,7 @@
 				</c:forEach>
 				</tbody>				
 			</table>
-			<button data-page="/views/ticketMovie/ticketMovie">영화입력</button>
+			<button data-page="/views/ticketMovie/ticketMovieInsert">영화입력</button>
 		
 		</div>
 	</div>

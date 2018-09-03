@@ -26,7 +26,7 @@
 			</tr>
 			<tr>
 				<th>상영일</th>
-				<td><input type="date" name="tmStartDat"></td>
+				<td><input type="date" name="tmStartdat"></td>
 			</tr>
 			<tr>
 				<th>종료일</th>
