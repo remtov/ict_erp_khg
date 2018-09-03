@@ -32,9 +32,6 @@ public class MemberServlet extends HttpServlet {
 		try {
 			if(cmd.equals("memberList")) {
 				req.setAttribute("miList", ms.selectMiList(null));
-			}else if(cmd.equals("memberInsert")) {
-				req.setAttribute("liList", ls.getLiList(null));
-				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));
 			}else if(cmd.equals("memberView")) {
 				req.setAttribute("liList", ls.getLiList(null));
 				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));

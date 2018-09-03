@@ -30,7 +30,7 @@
 						<td>${tm.tmEndDat}</td>
 						<td>${tm.tmDesc}</td>
 						<td>${tm.tmCnt}</td>
-						<td>${tm.tmImg}</td>
+						<td><img src="${tm.tmImg}" width="100"></td>
 					</tr>
 				</c:forEach>
 				</tbody>				

@@ -4,7 +4,7 @@
 <body>
 <c:if test="${!empty rMap }">
 <script>
-	alert('${rMap.msg}');
+
 	if(${rMap.cnt}==1){
 		location.href="/member/memberList";
 	}
@@ -48,17 +48,22 @@
 				<th>상세주소</th>
 				<td><input type="text" name="miAddress2"></td>
 			</tr>
+			
 			<tr>
 				<th>부서</th>
 				<td>
 					<select name="diCode">
+						
 						<option>선택</option>
+						
 						<c:forEach items="${diList}" var="di">
 							<option value="${di.diCode}">${di.diName}</option>
 						</c:forEach>	
 					</select>
 				</td>
+				
 			</tr>
+			
 			<tr>
 				<th>권한</th>
 				<td>

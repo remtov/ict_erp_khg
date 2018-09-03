@@ -2,11 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 <body>
-<c:if test="${!empty rMap }">
+<c:if test="${!empty cnt }">
 <script>
 	alert('${rMap.msg}');
 	if(${rMap.cnt}==1){
-		location.href="/member/memberList";
+	//	location.href="/member/memberList";
 	}
 </script>
 </c:if>

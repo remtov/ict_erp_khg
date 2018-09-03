@@ -15,7 +15,7 @@ public class TicketServiceImpl implements TicketService {
 	public List<TicketMovie> selectTmList(TicketMovie tm) throws SQLException {
 		try {
 			tdao.setConnection(DBCon.getCon());
-			return tdao.selectTmList(tm);
+			return tdao.selectTmList(null);
 		}catch(SQLException e) {
 			throw e;
 		}finally {
@@ -31,9 +31,15 @@ public class TicketServiceImpl implements TicketService {
 
 	@Override
 	public int insertTm(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+		tdao.setConnection(DBCon.getCon());
+		try {
+			return tdao.insertTm(tm);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+			}
 
 	@Override
 	public int updateTm(TicketMovie tm) throws SQLException {

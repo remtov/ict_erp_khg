@@ -21,8 +21,11 @@ import org.apache.commons.logging.LogFactory;
 
 import com.ict.erp.common.IBean;
 import com.ict.erp.common.ICTUtils;
+import com.ict.erp.service.MenuService;
 import com.ict.erp.service.TicketService;
+import com.ict.erp.service.impl.MenuServiceImpl;
 import com.ict.erp.service.impl.TicketServiceImpl;
+import com.ict.erp.vo.MusicChart;
 import com.ict.erp.vo.TicketMovie;
 
 public class TicketMovieServlet extends HttpServlet {
@@ -32,12 +35,13 @@ public class TicketMovieServlet extends HttpServlet {
 	private String uri;
 	private TicketService ts = new TicketServiceImpl();
 
+
 	private static final int THRESHOLD_SIZE = 1024 * 1024 * 5;// 5MB
 	private static final int UP_TOTAL_SIZE = 1024 * 1024 * 100;// 100MB
 	private static final int UP_FILE_SIZE = 1024 * 1024 * 20;// 20MB
 
 	private static final File TEMP_REPOSITORY = new File(System.getProperty("java.io.tmpdir"));
-	private static final String UP_PATH = "D:\\java_study\\workspace\\git\\ict_erp_khg\\ict_erp_khg\\WebContent";
+	private static final String UP_PATH = "C:\\jsp_studyKHG\\workspace\\git\\ict_erp_khg\\ict_erp_khg\\WebContent";
 
 	
 	
@@ -48,25 +52,18 @@ public class TicketMovieServlet extends HttpServlet {
 		uri = req.getRequestURI();
 		// 클라이언트의 요청이 무엇인지 판단하기 위해 마지막 '/'를 기준으로 uri를 잘라준다.
 		String cmd = ICTUtils.getCmd(uri);
-		
+		res.setContentType("text/html;charset=utf-8");
 		
 		try {
-
-			TicketMovie tm = IBean.parseRequest(req, TicketMovie.class);
-
-			log.trace(tm);
-			log.debug(tm);
-			log.info(tm);
-			log.warn(tm);
-			log.error(tm);
-			log.fatal(tm);
+			TicketMovie mc = IBean.parseRequest(req,TicketMovie.class);
 			// 클라이언트의 요청이 musicChart일경우(uri : localhost/music/musicChart)
-			if (cmd.equals("ticketMovie")) {
+			if (cmd.equals("ticketMovieList")) {
 				// 뮤직서비스에서 music리스트를 리턴하는 함수를 호출해준다.
-				List<TicketMovie> tmList = ts.selectTmList(tm);
+				List<TicketMovie> tmList = ts.selectTmList(mc);
 				req.setAttribute("tmList", tmList);
 				// 해당 리스트를 포워딩할 jsp에서 포문을 돌리며 출력해주기위해
 				// musicList라는 키값을 저장한다.
+				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -93,18 +90,15 @@ public class TicketMovieServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
-		uri = req.getRequestURI();
+		uri ="/views"+ req.getRequestURI();
 		// 클라이언트의 요청이 무엇인지 판단하기 위해 마지막 '/'를 기준으로 uri를 잘라준다.
 		String cmd = ICTUtils.getCmd(uri);
 		
 		try {
-			TicketMovie tm = IBean.parseRequest(req, TicketMovie.class);
-			log.debug(tm);
 			// 클라이언트의 요청이 musicInsert일경우(uri : localhost/music/musicInsert)
 		
 
 			if (cmd.equals("ticketMovieInsert")) {
-				req.setAttribute("cnt", ts.insertTm(tm));
 				if (!ServletFileUpload.isMultipartContent(req)) {
 					throw new ServletException("폼 인크립트가 파일업로드에 적합하지 않습니다.");
 				}
@@ -130,12 +124,11 @@ public class TicketMovieServlet extends HttpServlet {
 						params.put(fi.getFieldName(), fName);
 					}
 				}
-				tm = IBean.parseRequest(params, TicketMovie.class);
-				log.debug(params);
-				log.debug(tm);
+				TicketMovie tm = IBean.parseRequest(params, TicketMovie.class);
+				req.setAttribute("cnt", ts.insertTm(tm));				
 			}
-		} catch (SQLException e) {
-			e.printStackTrace();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw new ServletException(e);
