@@ -35,8 +35,8 @@ public class TicketDAOImpl extends CommonDAOImpl implements TicketDAO {
 
 	@Override
 	public int insertTm(TicketMovie tm) throws SQLException {
-	String sql = "insert into ticket_movie(tmNum, tmName, tmPrice,TMSTARTDAT, tmEnddat, tmCredat, tmDesc, tmImg)"
-			+ "values(seq_tmNum.nextval,?,?,?,?,to_char(sysdate,'yyyymmdd'),?,?)";
+	String sql = "insert into ticket_movie(tmNum, tmName, tmPrice,tmStartDat, tmEnddat, tmCredat, tmDesc, tmImg)"
+			+ "values(seq_Ticket_Movie_tmNum.nextval,?,?,?,?,to_char(sysdate,'yyyymmdd'),?,?)";
 	try {
 		ps = con.prepareStatement(sql);
 		ps.setString(1, tm.getTmName());

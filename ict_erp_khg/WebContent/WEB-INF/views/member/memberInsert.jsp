@@ -80,7 +80,7 @@
 				<td><input type="text" name="miDesc"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>부서등록</button></td>
+				<td colspan="2"><button>사원등록</button></td>
 			</tr>
 		</table>
 		</form>

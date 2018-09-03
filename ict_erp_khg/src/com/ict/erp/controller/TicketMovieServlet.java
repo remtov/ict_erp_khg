@@ -41,7 +41,7 @@ public class TicketMovieServlet extends HttpServlet {
 	private static final int UP_FILE_SIZE = 1024 * 1024 * 20;// 20MB
 
 	private static final File TEMP_REPOSITORY = new File(System.getProperty("java.io.tmpdir"));
-	private static final String UP_PATH = "C:\\jsp_studyKHG\\workspace\\git\\ict_erp_khg\\ict_erp_khg\\WebContent";
+	private static final String UP_PATH = "D:\\java_study\\workspace\\git\\ict_erp_khg\\ict_erp_khg\\WebContent";
 
 	
 	

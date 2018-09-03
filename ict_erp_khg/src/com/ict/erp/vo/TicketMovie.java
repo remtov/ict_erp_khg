@@ -6,10 +6,12 @@ public class TicketMovie {
 	private Integer tmPrice;
 	private String tmStartDat;
 	private String tmEndDat;
+	
 	private String tmCredat;
 	private String tmDesc;
 	private Integer tmCnt;
 	private String tmImg;
+	
 	public TicketMovie() {}
 	public TicketMovie(Integer tmNum, String tmName, Integer tmPrice, String tmStartDat, String tmEndDat,
 			String tmCredat, String tmDesc, Integer tmCnt, String tmImg) {
