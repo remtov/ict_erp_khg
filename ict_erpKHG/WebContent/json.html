@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>곡명</th>
+				<th>가수</th>
+				<th>배급사</th>
+				<th>좋아요</th>
+				<th>싫어요</th>
+				<th>발매일</th>
+				<th>기타</th>
+				
+			</tr>
+
+		</thead>
+
+		<tbody id="tBody">
+
+
+		</tbody>
+
+
+	</table>
+	<button type='button' id='btn'>제이슨테스트</button>
+	<script>
+		objs[i].onclick = function() {
+		
+			var req = new XMLHttpRequest();
+
+			req.onreadystatechange = function() {
+				if (req.readyState == req.DONE) {
+
+					if (req.status == 200) {
+
+						var obj = JSON.parse(req.responseText);
+					
+						var html='';
+
+						for (var i = 0; i < obj.length; i++) {
+							html += '<tr>';
+							html += '<td>' + obj[i].mcNum + '</td>';
+							html += '<td>' + obj[i].mcName + '</td>';
+							html += '<td>' + obj[i].mcSinger + '</td>';
+							html += '<td>' + obj[i].mcVendor + '</td>';
+							html += '<td>' + obj[i].mcLike + '</td>';
+							html += '<td>' + obj[i].mcDisLike + '</td>';
+							html += '<td>' + obj[i].mcCreDat + '</td>';
+							html += '<td>' + obj[i].mcDesc + '</td>';
+							
+							html += '</tr>';
+					
+						}
+
+						document.querySelector('#tBody').innerHtml = html;
+
+					} else {
+
+					}
+				}
+
+			}
+
+			var param = {name : '홍길동',age : '33',address : 'seoul'};
+			req.open(this.innerHTML,'/json/list');
+			req.send();
+
+		}
+	</script>
+
+</body>
+</html>
