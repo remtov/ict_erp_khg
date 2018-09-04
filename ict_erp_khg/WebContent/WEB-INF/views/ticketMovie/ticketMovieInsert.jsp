@@ -2,18 +2,17 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp" %>
 <body>
-<c:if test="${!empty cnt }">
+<c:if test="${!empty cnt}">
 <script>
-	alert('${rMap.msg}');
-	if(${rMap.cnt}==1){
-		location.href="/ticketMovie/ticketMovieList";
+	alert('${cnt}');
+	if(${cnt}==1){
+		//location.href="/ticketMovie/ticketMovieList";
 	}
 </script>
 </c:if>
 <div id="wrapper">
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
 	<div id="page-content-wrapper">
-	
 		<form action="/ticketMovie/ticketMovieInsert" method="post" enctype="multipart/form-data">
 		<table class="table table-bordered">
 			<tr>
@@ -26,7 +25,7 @@
 			</tr>
 			<tr>
 				<th>상영일</th>
-				<td><input type="date" name="tmStartdat"></td>
+				<td><input type="date" name="tmStartDat"></td>
 			</tr>
 			<tr>
 				<th>종료일</th>

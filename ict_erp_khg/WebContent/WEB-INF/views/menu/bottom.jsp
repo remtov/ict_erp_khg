@@ -6,7 +6,7 @@ String title = "클라우드 프로젝트";
 String uri = request.getRequestURI();
 %>
 <body>
-<div align="right" style="position:absolute; right:0px; bottom:0px;">
+<div align="right" style="position:static; right:10px; bottom:10px;">
 
 
 
