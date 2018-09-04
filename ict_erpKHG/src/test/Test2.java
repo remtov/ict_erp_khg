@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Test {
+public class Test2 {
 	public static String byteToBinaryString(byte n) {
 	    StringBuilder sb = new StringBuilder("00000000");
 	    for (int bit = 0; bit < 8; bit++) {
