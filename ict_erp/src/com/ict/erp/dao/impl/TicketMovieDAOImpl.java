@@ -43,8 +43,8 @@ public class TicketMovieDAOImpl extends CommonDAOImpl implements TicketMovieDAO 
 			ps = con.prepareStatement(sql);
 			ps.setString(1, tm.getTmName());
 			ps.setInt(2, tm.getTmPrice());
-			ps.setString(3, tm.getTmStartdat().replace("-", ""));
-			ps.setString(4, tm.getTmEnddat().replace("-", ""));
+			ps.setString(3, tm.getTmStartDat().replace("-", ""));
+			ps.setString(4, tm.getTmEndDat().replace("-", ""));
 			ps.setString(5, tm.getTmDesc());
 			ps.setString(6, tm.getTmImg());
 			return ps.executeUpdate();

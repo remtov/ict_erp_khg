@@ -10,7 +10,7 @@ import com.ict.erp.vo.MusicChart;
 public class MusicDAOImpl extends CommonDAOImpl implements MusicDAO {
 	private static String SELECT_MUSIC_LIST = "select * from music_chart ";
 	@Override
-	public List<MusicChart> selectMusicList(MusicChart menu) throws SQLException {
+	public List<MusicChart> selectMusicList(MusicChart music) throws SQLException {
 		try {
 			ps = con.prepareStatement(SELECT_MUSIC_LIST);
 			rs = ps.executeQuery();
@@ -24,25 +24,25 @@ public class MusicDAOImpl extends CommonDAOImpl implements MusicDAO {
 	}
 
 	@Override
-	public MusicChart selectMusic(MusicChart menu) throws SQLException {
+	public MusicChart selectMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int insertMusic(MusicChart menu) throws SQLException {
+	public int insertMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateMusic(MusicChart menu) throws SQLException {
+	public int updateMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteMusic(MusicChart menu) throws SQLException {
+	public int deleteMusic(MusicChart music) throws SQLException {
 		// TODO Auto-generated method stub
 		return 0;
 	}

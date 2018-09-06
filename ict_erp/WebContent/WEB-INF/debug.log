@@ -1,247 +1,223 @@
-[2018-09-03 10:16:16,368]DEBUG (AuthFilter.java:34):/
-[2018-09-03 10:16:16,380] INFO (AuthFilter.java:36):/
-[2018-09-03 10:16:16,381] WARN (AuthFilter.java:38):/
-[2018-09-03 10:16:16,381]ERROR (AuthFilter.java:40):/
-[2018-09-03 10:16:16,381]FATAL (AuthFilter.java:42):/
-[2018-09-03 10:16:23,036]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:23,038] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:23,038] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:23,038]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:23,039]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:23,231]DEBUG (AuthFilter.java:34):/favicon.ico
-[2018-09-03 10:16:23,232] INFO (AuthFilter.java:36):/favicon.ico
-[2018-09-03 10:16:23,232] WARN (AuthFilter.java:38):/favicon.ico
-[2018-09-03 10:16:23,232]ERROR (AuthFilter.java:40):/favicon.ico
-[2018-09-03 10:16:23,232]FATAL (AuthFilter.java:42):/favicon.ico
-[2018-09-03 10:16:28,952]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:28,953] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:28,953] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:28,954]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:28,954]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:30,111]DEBUG (AuthFilter.java:34):/css/simple-sidebar.css
-[2018-09-03 10:16:30,111]DEBUG (AuthFilter.java:34):/css/common.css
-[2018-09-03 10:16:30,112] INFO (AuthFilter.java:36):/css/simple-sidebar.css
-[2018-09-03 10:16:30,112] INFO (AuthFilter.java:36):/css/common.css
-[2018-09-03 10:16:30,112] WARN (AuthFilter.java:38):/css/simple-sidebar.css
-[2018-09-03 10:16:30,112] WARN (AuthFilter.java:38):/css/common.css
-[2018-09-03 10:16:30,112]ERROR (AuthFilter.java:40):/css/simple-sidebar.css
-[2018-09-03 10:16:30,112]ERROR (AuthFilter.java:40):/css/common.css
-[2018-09-03 10:16:30,112]FATAL (AuthFilter.java:42):/css/simple-sidebar.css
-[2018-09-03 10:16:30,112]FATAL (AuthFilter.java:42):/css/common.css
-[2018-09-03 10:16:30,139]DEBUG (AuthFilter.java:34):/vendor/common.js
-[2018-09-03 10:16:30,139] INFO (AuthFilter.java:36):/vendor/common.js
-[2018-09-03 10:16:30,140] WARN (AuthFilter.java:38):/vendor/common.js
-[2018-09-03 10:16:30,140]ERROR (AuthFilter.java:40):/vendor/common.js
-[2018-09-03 10:16:30,140]FATAL (AuthFilter.java:42):/vendor/common.js
-[2018-09-03 10:16:30,151]DEBUG (AuthFilter.java:34):/vendor/bootstrap/js/bootstrap.bundle.min.js
-[2018-09-03 10:16:30,151] INFO (AuthFilter.java:36):/vendor/bootstrap/js/bootstrap.bundle.min.js
-[2018-09-03 10:16:30,151] WARN (AuthFilter.java:38):/vendor/bootstrap/js/bootstrap.bundle.min.js
-[2018-09-03 10:16:30,151]ERROR (AuthFilter.java:40):/vendor/bootstrap/js/bootstrap.bundle.min.js
-[2018-09-03 10:16:30,152]FATAL (AuthFilter.java:42):/vendor/bootstrap/js/bootstrap.bundle.min.js
-[2018-09-03 10:16:30,152]DEBUG (AuthFilter.java:34):/vendor/bootstrap/css/bootstrap.min.css
-[2018-09-03 10:16:30,152] INFO (AuthFilter.java:36):/vendor/bootstrap/css/bootstrap.min.css
-[2018-09-03 10:16:30,152] WARN (AuthFilter.java:38):/vendor/bootstrap/css/bootstrap.min.css
-[2018-09-03 10:16:30,153]ERROR (AuthFilter.java:40):/vendor/bootstrap/css/bootstrap.min.css
-[2018-09-03 10:16:30,153]FATAL (AuthFilter.java:42):/vendor/bootstrap/css/bootstrap.min.css
-[2018-09-03 10:16:30,202]DEBUG (AuthFilter.java:34):/vendor/jquery/jquery.min.js
-[2018-09-03 10:16:30,202] INFO (AuthFilter.java:36):/vendor/jquery/jquery.min.js
-[2018-09-03 10:16:30,203] WARN (AuthFilter.java:38):/vendor/jquery/jquery.min.js
-[2018-09-03 10:16:30,203]ERROR (AuthFilter.java:40):/vendor/jquery/jquery.min.js
-[2018-09-03 10:16:30,203]FATAL (AuthFilter.java:42):/vendor/jquery/jquery.min.js
-[2018-09-03 10:16:44,497]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:44,497] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:44,498] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:44,498]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:16:44,498]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:19:06,611]DEBUG (TicketMovieServlet.java:71):{tmName=asdf, tmDesc=asdf, tmPrice=123123, tmStartDat=2018-09-03, tmEndDat=2018-09-12, tmImg=\upload\1535937508864.jpg}
-[2018-09-03 10:19:06,612]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=asdf, tmPrice=123123, tmStartDat=2018-09-03, tmEndDat=2018-09-12, tmCredat=null, tmDesc=asdf, tmCnt=null, tmImg=\upload\1535937508864.jpg]
-[2018-09-03 10:20:20,070]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:20:20,083] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:20:20,083] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:20:20,084]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:20:20,084]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:21:07,389]DEBUG (TicketMovieServlet.java:71):{tmName=asdf, tmDesc=asdf, tmPrice=123123, tmStartDat=2018-09-03, tmEndDat=2018-09-12, tmImg=\upload\1535937631040.jpg}
-[2018-09-03 10:21:07,390]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=asdf, tmPrice=123123, tmStartDat=2018-09-03, tmEndDat=2018-09-12, tmCredat=null, tmDesc=asdf, tmCnt=null, tmImg=\upload\1535937631040.jpg]
-[2018-09-03 10:25:54,976]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:25:54,978] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:25:54,978] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:25:54,978]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:25:54,979]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:14,085]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:14,085] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:14,085] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:14,085]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:14,086]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:19,060]DEBUG (TicketMovieServlet.java:71):{tmName=, tmImg1=\upload\1535937978991.jpg, tmDesc=, tmImg2=\upload\1535937978995.jpg, tmImg3=\upload\1535937979005.jpg, tmImg4=\upload\1535937979011.jpg, tmPrice=, tmStartDat=, tmEndDat=}
-[2018-09-03 10:26:19,061]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=, tmPrice=0, tmStartDat=, tmEndDat=, tmCredat=null, tmDesc=, tmCnt=null, tmImg=null]
-[2018-09-03 10:26:24,132]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:24,132] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:24,132] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:24,133]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:24,133]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:29,166]DEBUG (TicketMovieServlet.java:71):{tmName=, tmImg1=\upload\1535937989160.jpg, tmDesc=, tmImg2=\upload\1535937989161.jpg, tmImg3=\upload\1535937989162.jpg, tmImg4=\upload\1535937989163.jpg, tmPrice=, tmStartDat=, tmEndDat=}
-[2018-09-03 10:26:29,166]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=, tmPrice=0, tmStartDat=, tmEndDat=, tmCredat=null, tmDesc=, tmCnt=null, tmImg=null]
-[2018-09-03 10:26:47,266]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:47,266] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:47,266] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:47,267]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:47,267]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 10:26:47,362]DEBUG (TicketMovieServlet.java:71):{tmName=, tmImg1=\upload\1535938007355.jpg, tmDesc=, tmImg2=\upload\1535938007356.jpg, tmImg3=\upload\1535938007357.jpg, tmImg4=\upload\1535938007359.jpg, tmPrice=, tmStartDat=, tmEndDat=}
-[2018-09-03 10:26:47,362]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=, tmPrice=0, tmStartDat=, tmEndDat=, tmCredat=null, tmDesc=, tmCnt=null, tmImg=null]
-[2018-09-03 11:44:29,143]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 11:44:29,158] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 11:44:29,159] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 11:44:29,160]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 11:44:29,160]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 11:45:04,922]DEBUG (TicketMovieServlet.java:71):{tmName=asdf, tmImg1=\upload\1535942669272.jpg, tmDesc=테스트, tmImg2=\upload\1535942669276.jpg, tmImg3=\upload\1535942669279.jpg, tmImg4=\upload\1535942669283.jpg, tmPrice=12312, tmStartDat=2018-09-03, tmEndDat=2018-09-29}
-[2018-09-03 11:45:04,923]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=asdf, tmPrice=12312, tmStartDat=2018-09-03, tmEndDat=2018-09-29, tmCredat=null, tmDesc=테스트, tmCnt=null, tmImg=null]
-[2018-09-03 12:05:02,022]DEBUG (AuthFilter.java:34):/
-[2018-09-03 12:05:02,038] INFO (AuthFilter.java:36):/
-[2018-09-03 12:05:02,038] WARN (AuthFilter.java:38):/
-[2018-09-03 12:05:02,038]ERROR (AuthFilter.java:40):/
-[2018-09-03 12:05:02,038]FATAL (AuthFilter.java:42):/
-[2018-09-03 13:47:03,306]DEBUG (AuthFilter.java:34):/
-[2018-09-03 13:47:03,322] INFO (AuthFilter.java:36):/
-[2018-09-03 13:47:03,322] WARN (AuthFilter.java:38):/
-[2018-09-03 13:47:03,322]ERROR (AuthFilter.java:40):/
-[2018-09-03 13:47:03,322]FATAL (AuthFilter.java:42):/
-[2018-09-03 14:11:57,025]DEBUG (AuthFilter.java:34):/
-[2018-09-03 14:11:57,033] INFO (AuthFilter.java:36):/
-[2018-09-03 14:11:57,033] WARN (AuthFilter.java:38):/
-[2018-09-03 14:11:57,034]ERROR (AuthFilter.java:40):/
-[2018-09-03 14:11:57,034]FATAL (AuthFilter.java:42):/
-[2018-09-03 14:15:03,420]DEBUG (AuthFilter.java:34):/
-[2018-09-03 14:15:03,420] INFO (AuthFilter.java:36):/
-[2018-09-03 14:15:03,420] WARN (AuthFilter.java:38):/
-[2018-09-03 14:15:03,420]ERROR (AuthFilter.java:40):/
-[2018-09-03 14:15:03,420]FATAL (AuthFilter.java:42):/
-[2018-09-03 14:15:29,084]DEBUG (AuthFilter.java:34):/
-[2018-09-03 14:15:29,084] INFO (AuthFilter.java:36):/
-[2018-09-03 14:15:29,084] WARN (AuthFilter.java:38):/
-[2018-09-03 14:15:29,084]ERROR (AuthFilter.java:40):/
-[2018-09-03 14:15:29,084]FATAL (AuthFilter.java:42):/
-[2018-09-03 14:16:06,936]DEBUG (AuthFilter.java:34):/
-[2018-09-03 14:16:06,952] INFO (AuthFilter.java:36):/
-[2018-09-03 14:16:06,952] WARN (AuthFilter.java:38):/
-[2018-09-03 14:16:06,952]ERROR (AuthFilter.java:40):/
-[2018-09-03 14:16:06,952]FATAL (AuthFilter.java:42):/
-[2018-09-03 14:18:49,465]DEBUG (AuthFilter.java:34):/favicon.ico
-[2018-09-03 14:18:49,466] INFO (AuthFilter.java:36):/favicon.ico
-[2018-09-03 14:18:49,466] WARN (AuthFilter.java:38):/favicon.ico
-[2018-09-03 14:18:49,466]ERROR (AuthFilter.java:40):/favicon.ico
-[2018-09-03 14:18:49,466]FATAL (AuthFilter.java:42):/favicon.ico
-[2018-09-03 14:42:48,575]DEBUG (AuthFilter.java:34):/
-[2018-09-03 14:42:48,587] INFO (AuthFilter.java:36):/
-[2018-09-03 14:42:48,587] WARN (AuthFilter.java:38):/
-[2018-09-03 14:42:48,587]ERROR (AuthFilter.java:40):/
-[2018-09-03 14:42:48,587]FATAL (AuthFilter.java:42):/
-[2018-09-03 15:58:42,586]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:42,601] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:42,602] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:42,602]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:42,602]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:46,862]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:46,862] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:46,862] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:46,862]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:58:46,862]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:00,886]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:00,889] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:00,890] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:00,890]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:00,891]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:30,137]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:30,137] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:30,137] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:30,138]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 15:59:30,138]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:02,024]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:02,024] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:02,025] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:02,025]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:02,025]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:40,821]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:40,829] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:40,829] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:40,829]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:00:40,830]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
-[2018-09-03 16:07:58,470]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:07:58,478] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:07:58,478] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:07:58,479]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:07:58,479]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:27,855]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:27,881] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:27,883] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:27,884]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:27,885]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:28,482]DEBUG (AuthFilter.java:34):/upload/1535958040883.jpg
-[2018-09-03 16:09:28,483] INFO (AuthFilter.java:36):/upload/1535958040883.jpg
-[2018-09-03 16:09:28,484] WARN (AuthFilter.java:38):/upload/1535958040883.jpg
-[2018-09-03 16:09:28,484]ERROR (AuthFilter.java:40):/upload/1535958040883.jpg
-[2018-09-03 16:09:28,484]FATAL (AuthFilter.java:42):/upload/1535958040883.jpg
-[2018-09-03 16:09:55,151]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:55,164] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:55,165] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:55,165]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:55,165]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:09:55,802]DEBUG (AuthFilter.java:34):/upload/1535958040883.jpg
-[2018-09-03 16:09:55,809] INFO (AuthFilter.java:36):/upload/1535958040883.jpg
-[2018-09-03 16:09:55,809] WARN (AuthFilter.java:38):/upload/1535958040883.jpg
-[2018-09-03 16:09:55,809]ERROR (AuthFilter.java:40):/upload/1535958040883.jpg
-[2018-09-03 16:09:55,809]FATAL (AuthFilter.java:42):/upload/1535958040883.jpg
-[2018-09-03 16:10:15,614]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:15,615] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:15,615] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:15,615]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:15,615]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:21,752]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:21,752] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:21,752] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:21,752]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:10:21,752]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:20,749]DEBUG (AuthFilter.java:34):/
-[2018-09-03 16:13:20,765] INFO (AuthFilter.java:36):/
-[2018-09-03 16:13:20,765] WARN (AuthFilter.java:38):/
-[2018-09-03 16:13:20,765]ERROR (AuthFilter.java:40):/
-[2018-09-03 16:13:20,765]FATAL (AuthFilter.java:42):/
-[2018-09-03 16:13:25,388]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:25,389] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:25,389] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:25,390]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:25,390]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:13:26,321]DEBUG (AuthFilter.java:34):/upload/1535958040883.jpg
-[2018-09-03 16:13:26,321] INFO (AuthFilter.java:36):/upload/1535958040883.jpg
-[2018-09-03 16:13:26,322] WARN (AuthFilter.java:38):/upload/1535958040883.jpg
-[2018-09-03 16:13:26,322]ERROR (AuthFilter.java:40):/upload/1535958040883.jpg
-[2018-09-03 16:13:26,322]FATAL (AuthFilter.java:42):/upload/1535958040883.jpg
-[2018-09-03 16:16:10,810]DEBUG (AuthFilter.java:34):/
-[2018-09-03 16:16:10,819] INFO (AuthFilter.java:36):/
-[2018-09-03 16:16:10,820] WARN (AuthFilter.java:38):/
-[2018-09-03 16:16:10,820]ERROR (AuthFilter.java:40):/
-[2018-09-03 16:16:10,820]FATAL (AuthFilter.java:42):/
-[2018-09-03 16:16:25,408]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:16:25,409] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:16:25,409] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:16:25,409]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:16:25,409]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:16:26,313]DEBUG (AuthFilter.java:34):/upload/1535958040883.jpg
-[2018-09-03 16:16:26,314] INFO (AuthFilter.java:36):/upload/1535958040883.jpg
-[2018-09-03 16:16:26,314] WARN (AuthFilter.java:38):/upload/1535958040883.jpg
-[2018-09-03 16:16:26,315]ERROR (AuthFilter.java:40):/upload/1535958040883.jpg
-[2018-09-03 16:16:26,315]FATAL (AuthFilter.java:42):/upload/1535958040883.jpg
-[2018-09-03 16:18:59,443]DEBUG (AuthFilter.java:34):/
-[2018-09-03 16:18:59,467] INFO (AuthFilter.java:36):/
-[2018-09-03 16:18:59,467] WARN (AuthFilter.java:38):/
-[2018-09-03 16:18:59,467]ERROR (AuthFilter.java:40):/
-[2018-09-03 16:18:59,467]FATAL (AuthFilter.java:42):/
-[2018-09-03 16:19:14,080]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieList
-[2018-09-03 16:19:14,082] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieList
-[2018-09-03 16:19:14,082] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieList
-[2018-09-03 16:19:14,082]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieList
-[2018-09-03 16:19:14,083]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieList
-[2018-09-03 16:19:14,945]DEBUG (AuthFilter.java:34):/upload/1535958040883.jpg
-[2018-09-03 16:19:14,945] INFO (AuthFilter.java:36):/upload/1535958040883.jpg
-[2018-09-03 16:19:14,945] WARN (AuthFilter.java:38):/upload/1535958040883.jpg
-[2018-09-03 16:19:14,946]ERROR (AuthFilter.java:40):/upload/1535958040883.jpg
-[2018-09-03 16:19:14,946]FATAL (AuthFilter.java:42):/upload/1535958040883.jpg
+[2018-08-31 11:50:26,183]TRACE (AuthFilter.java:33):/music/musicChart
+[2018-08-31 11:50:26,194]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 11:50:26,194] INFO (AuthFilter.java:35):/music/musicChart
+[2018-08-31 11:50:26,195] WARN (AuthFilter.java:36):/music/musicChart
+[2018-08-31 11:50:26,195]ERROR (AuthFilter.java:37):/music/musicChart
+[2018-08-31 11:50:26,195]FATAL (AuthFilter.java:38):/music/musicChart
+[2018-08-31 11:50:26,251]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 11:50:26,251]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 11:50:31,799]TRACE (AuthFilter.java:33):/music/musicChart
+[2018-08-31 11:50:31,800]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 11:50:31,800] INFO (AuthFilter.java:35):/music/musicChart
+[2018-08-31 11:50:31,801] WARN (AuthFilter.java:36):/music/musicChart
+[2018-08-31 11:50:31,801]ERROR (AuthFilter.java:37):/music/musicChart
+[2018-08-31 11:50:31,801]FATAL (AuthFilter.java:38):/music/musicChart
+[2018-08-31 11:50:31,803]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 11:50:31,803]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:16,360]TRACE (AuthFilter.java:33):/music/musicChart
+[2018-08-31 13:03:16,369]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 13:03:16,370] INFO (AuthFilter.java:35):/music/musicChart
+[2018-08-31 13:03:16,370] WARN (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:03:16,370]ERROR (AuthFilter.java:37):/music/musicChart
+[2018-08-31 13:03:16,370]FATAL (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:03:16,428]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:16,428]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:17,127]TRACE (AuthFilter.java:33):/vendor/common.js
+[2018-08-31 13:03:17,131]DEBUG (AuthFilter.java:34):/vendor/common.js
+[2018-08-31 13:03:17,132] INFO (AuthFilter.java:35):/vendor/common.js
+[2018-08-31 13:03:17,132] WARN (AuthFilter.java:36):/vendor/common.js
+[2018-08-31 13:03:17,132]ERROR (AuthFilter.java:37):/vendor/common.js
+[2018-08-31 13:03:17,132]FATAL (AuthFilter.java:38):/vendor/common.js
+[2018-08-31 13:03:18,829]TRACE (AuthFilter.java:33):/music/musicChart
+[2018-08-31 13:03:18,831]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 13:03:18,831] INFO (AuthFilter.java:35):/music/musicChart
+[2018-08-31 13:03:18,831] WARN (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:03:18,832]ERROR (AuthFilter.java:37):/music/musicChart
+[2018-08-31 13:03:18,832]FATAL (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:03:18,836]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:18,836]FATAL (MusicServlet.java:39):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:26,900]TRACE (AuthFilter.java:33):/music/musicChart
+[2018-08-31 13:03:26,913]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 13:03:26,913] INFO (AuthFilter.java:35):/music/musicChart
+[2018-08-31 13:03:26,914] WARN (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:03:26,914]ERROR (AuthFilter.java:37):/music/musicChart
+[2018-08-31 13:03:26,914]FATAL (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:03:26,991]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:03:26,991]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:35:58,942]TRACE (AuthFilter.java:32):/
+[2018-08-31 13:35:58,949]DEBUG (AuthFilter.java:34):/
+[2018-08-31 13:35:58,949] INFO (AuthFilter.java:36):/
+[2018-08-31 13:35:58,949] WARN (AuthFilter.java:38):/
+[2018-08-31 13:35:58,949]ERROR (AuthFilter.java:40):/
+[2018-08-31 13:35:58,950]FATAL (AuthFilter.java:42):/
+[2018-08-31 13:36:03,184]TRACE (AuthFilter.java:32):/music/musicChart
+[2018-08-31 13:36:03,185]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 13:36:03,186] INFO (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:36:03,186] WARN (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:36:03,186]ERROR (AuthFilter.java:40):/music/musicChart
+[2018-08-31 13:36:03,186]FATAL (AuthFilter.java:42):/music/musicChart
+[2018-08-31 13:36:03,285]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:36:03,285]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:37:16,472]TRACE (AuthFilter.java:32):/music/musicChart
+[2018-08-31 13:37:16,482]DEBUG (AuthFilter.java:34):/music/musicChart
+[2018-08-31 13:37:16,482] INFO (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:37:16,483] WARN (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:37:16,484]ERROR (AuthFilter.java:40):/music/musicChart
+[2018-08-31 13:37:16,484]FATAL (AuthFilter.java:42):/music/musicChart
+[2018-08-31 13:37:16,548]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:37:16,548]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:38:34,320] INFO (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:38:34,329] WARN (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:38:34,329]ERROR (AuthFilter.java:40):/music/musicChart
+[2018-08-31 13:38:34,330]FATAL (AuthFilter.java:42):/music/musicChart
+[2018-08-31 13:38:34,387]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:38:34,387]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:43:18,672] INFO (AuthFilter.java:36):/music/musicChart
+[2018-08-31 13:43:18,679] WARN (AuthFilter.java:38):/music/musicChart
+[2018-08-31 13:43:18,679]ERROR (AuthFilter.java:40):/music/musicChart
+[2018-08-31 13:43:18,679]FATAL (AuthFilter.java:42):/music/musicChart
+[2018-08-31 13:43:18,739]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 13:43:18,739]FATAL (MusicServlet.java:40):MusicChart [mcNum=0, mcName=null, mcSinger=null, mcVendor=null, mcLike=null, mcDislike=null, mcCredat=null, mcDesc=null, tests=[1, 2]]
+[2018-08-31 17:09:25,778] INFO (AuthFilter.java:36):/
+[2018-08-31 17:09:25,785] WARN (AuthFilter.java:38):/
+[2018-08-31 17:09:25,785]ERROR (AuthFilter.java:40):/
+[2018-08-31 17:09:25,785]FATAL (AuthFilter.java:42):/
+[2018-08-31 17:09:47,482] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:09:47,485] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:09:47,485]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:09:47,485]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:09:47,581] INFO (AuthFilter.java:36):/css/simple-sidebar.css
+[2018-08-31 17:09:47,582] WARN (AuthFilter.java:38):/css/simple-sidebar.css
+[2018-08-31 17:09:47,582]ERROR (AuthFilter.java:40):/css/simple-sidebar.css
+[2018-08-31 17:09:47,583]FATAL (AuthFilter.java:42):/css/simple-sidebar.css
+[2018-08-31 17:09:47,606] INFO (AuthFilter.java:36):/vendor/common.js
+[2018-08-31 17:09:47,608] WARN (AuthFilter.java:38):/vendor/common.js
+[2018-08-31 17:09:47,609]ERROR (AuthFilter.java:40):/vendor/common.js
+[2018-08-31 17:09:47,609]FATAL (AuthFilter.java:42):/vendor/common.js
+[2018-08-31 17:09:47,609] INFO (AuthFilter.java:36):/vendor/jquery/jquery.min.js
+[2018-08-31 17:09:47,620] WARN (AuthFilter.java:38):/vendor/jquery/jquery.min.js
+[2018-08-31 17:09:47,620]ERROR (AuthFilter.java:40):/vendor/jquery/jquery.min.js
+[2018-08-31 17:09:47,621]FATAL (AuthFilter.java:42):/vendor/jquery/jquery.min.js
+[2018-08-31 17:09:47,657] INFO (AuthFilter.java:36):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-08-31 17:09:47,657] WARN (AuthFilter.java:38):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-08-31 17:09:47,657]ERROR (AuthFilter.java:40):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-08-31 17:09:47,658]FATAL (AuthFilter.java:42):/vendor/bootstrap/js/bootstrap.bundle.min.js
+[2018-08-31 17:09:47,661] INFO (AuthFilter.java:36):/css/common.css
+[2018-08-31 17:09:47,666] WARN (AuthFilter.java:38):/css/common.css
+[2018-08-31 17:09:47,667]ERROR (AuthFilter.java:40):/css/common.css
+[2018-08-31 17:09:47,667]FATAL (AuthFilter.java:42):/css/common.css
+[2018-08-31 17:09:47,675] INFO (AuthFilter.java:36):/vendor/bootstrap/css/bootstrap.min.css
+[2018-08-31 17:09:47,676] WARN (AuthFilter.java:38):/vendor/bootstrap/css/bootstrap.min.css
+[2018-08-31 17:09:47,676]ERROR (AuthFilter.java:40):/vendor/bootstrap/css/bootstrap.min.css
+[2018-08-31 17:09:47,676]FATAL (AuthFilter.java:42):/vendor/bootstrap/css/bootstrap.min.css
+[2018-08-31 17:10:04,133] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:04,134] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:04,134]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:04,134]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:45,848] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:45,849] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:45,849]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:10:45,850]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:11:22,211] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:11:22,227] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:11:22,227]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:11:22,227]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:12:50,938] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:12:50,949] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:12:50,949]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:12:50,949]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:13:04,661] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:13:04,662] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:13:04,662]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:13:04,662]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:11,530] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:11,544] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:11,544]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:11,545]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:16,083] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:16,096] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:16,096]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:16,097]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:40,178] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:40,194] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:40,195]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:14:40,195]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:15:26,875] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:15:26,885] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:15:26,886]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:15:26,886]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:15:27,002] INFO (TicketMovieServlet.java:71):TicketMovie [tmNum=null, tmNAME=null, tmPrice=null, tmStartDat=null, tmEndDat=null, tmCredat=null, tmDesc=null, tmCnt=null, tmImg=null]
+[2018-08-31 17:17:32,398] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:32,410] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:32,410]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:32,411]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,817]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,832] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,832] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,832]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,833]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:17:55,960]DEBUG (TicketMovieServlet.java:71):{miPwd=20000, miEmail=2018-08-31, miId=ëì , miZipcode=\upload\1535703475891.jpg, miName=2018-08-07, miPhone=ì¼ë¨}
+[2018-08-31 17:17:55,961]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=null, tmPrice=null, tmStartDat=null, tmEndDat=null, tmCredat=null, tmDesc=null, tmCnt=null, tmImg=null]
+[2018-08-31 17:18:02,006]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:02,008] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:02,008] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:02,008]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:02,008]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,410]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,410] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,410] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,410]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,410]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:18,416]DEBUG (TicketMovieServlet.java:71):{tmName=ëì , tmDesc=ì¼ë¨, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmImg=\upload\1535703498412.jpg}
+[2018-08-31 17:18:18,416]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=ëì , tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmCredat=null, tmDesc=ì¼ë¨, tmCnt=null, tmImg=\upload\1535703498412.jpg]
+[2018-08-31 17:18:51,753]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:51,753] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:51,754] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:51,754]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:51,754]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:51,765]DEBUG (TicketMovieServlet.java:71):{tmName=ëì , tmDesc=ì¼ë¨, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmImg=\upload\1535703531759.jpg}
+[2018-08-31 17:18:51,766]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=ëì , tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmCredat=null, tmDesc=ì¼ë¨, tmCnt=null, tmImg=\upload\1535703531759.jpg]
+[2018-08-31 17:18:56,603]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:56,618] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:56,618] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:56,618]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:56,618]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:18:56,727]DEBUG (TicketMovieServlet.java:71):{tmName=독전, tmDesc=잼남, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmImg=\upload\1535703536669.jpg}
+[2018-08-31 17:18:56,728]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=독전, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-08-31, tmCredat=null, tmDesc=잼남, tmCnt=null, tmImg=\upload\1535703536669.jpg]
+[2018-08-31 17:28:23,371]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:23,372] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:23,372] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:23,372]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:23,372]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,907]DEBUG (AuthFilter.java:34):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,908] INFO (AuthFilter.java:36):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,908] WARN (AuthFilter.java:38):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,908]ERROR (AuthFilter.java:40):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,908]FATAL (AuthFilter.java:42):/ticketMovie/ticketMovieInsert
+[2018-08-31 17:28:45,916]DEBUG (TicketMovieServlet.java:71):{tmName=독전, tmDesc=잼남, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-09-30, tmImg=\upload\1535704125910.jpg}
+[2018-08-31 17:28:45,916]DEBUG (TicketMovieServlet.java:72):TicketMovie [tmNum=null, tmName=독전, tmPrice=20000, tmStartDat=2018-08-07, tmEndDat=2018-09-30, tmCredat=null, tmDesc=잼남, tmCnt=null, tmImg=\upload\1535704125910.jpg]
+[2018-08-31 17:29:21,155]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:21,155] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:21,155] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:21,155]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:21,155]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:34,915]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:34,915] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:34,916] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:34,916]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:34,916]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:47,757]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:47,758] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:47,758] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:47,759]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:47,759]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,553]DEBUG (AuthFilter.java:34):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,553] INFO (AuthFilter.java:36):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,554] WARN (AuthFilter.java:38):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,554]ERROR (AuthFilter.java:40):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,554]FATAL (AuthFilter.java:42):/views/ticketMovie/ticketMovieInsert
+[2018-08-31 17:29:49,596]DEBUG (AuthFilter.java:34):/upload/1535704125910.jpg
+[2018-08-31 17:29:49,597] INFO (AuthFilter.java:36):/upload/1535704125910.jpg
+[2018-08-31 17:29:49,597] WARN (AuthFilter.java:38):/upload/1535704125910.jpg
+[2018-08-31 17:29:49,597]ERROR (AuthFilter.java:40):/upload/1535704125910.jpg
+[2018-08-31 17:29:49,597]FATAL (AuthFilter.java:42):/upload/1535704125910.jpg

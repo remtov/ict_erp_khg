@@ -1,0 +1,72 @@
+grant connect to <user>;
+grant create table to <user>;
+grant create sequence to <user>;
+grant create trigger to <user>;
+grant select,insert,update,delete on <user1>.<table> to <user2>;
+
+-- 필자의 경우 user를 system으로 사용하였습니다.
+-- create 권한 부여
+grant connect to system;
+grant create table,
+      create sequence,
+      create trigger to system;
+
+
+
+CREATE TABLE board (
+  idx int,
+  writer varchar(255),
+  subject varchar(255),
+  content clob,
+  reg_date timestamp,
+  primary key (idx)
+);
+-- primary key (idx) => idx은 유니크한 값을 갖는다. 다른 값과 겹치면 안 된다
+
+
+-- 다음과 같이 한 줄로 써도 됩니다.테이블권한
+grant select, insert, update, delete on sys.board to system;
+grant select, insert, update, delete on ictu.MUSIC_CHART to ICTU;
+grant select, insert, update, delete on ictu.MUSIC_CHART to ICTU;
+
+-- SEQUENCE 권한 부여
+GRANT SELECT, ALTER on sys.comment_seq to system;
+
+GRANT SELECT, ALTER on ictu.SEQ_MUSIC_CHART_MCNUM to ictu;
+
+
+
+시퀀스생성--
+CREATE SEQUENCE SEQ_music_chart_mcNum INCREMENT BY 1 START WITH 1;
+
+
+4. 테이블 컬럼 이름 변경하기(ALTER TABLE RENAME)
+
+[문법] ALTER TABLE 테이블명 RENAME COLUMN 원래컬럼명 TO 바꿀컬럼명;
+
+( EX ) USER라는 테이블에 USER_NAME 이라는 컬럼을 USER_FIRST_NAME으로 변경할 때
+
+-> ALTER TABLE USER RENAME COLUMN USER_NAME TO USER_FIRST_NAME;
+
+
+
+2. 테이블 컬럼 수정하기(ALTER TABLE MODIFY)
+
+테이블 컬럼 추가
+alter table ticket_movie add (
+tmCredat varchar2(1000 byte);
+
+테이블컬럼 속성변경
+
+ALTER TABLE USER MODIFY(USER_AGE NUMBER(3));
+
+
+
+[문법] ALTER TABLE 테이블명 MODIFY(컬럼명 테이타타입(사이즈));
+
+( EX ) USER라는 테이블에 USER_AGE 라는 컬럼을 NUNBER(3) 타입으로 수정할 때
+
+-> ALTER TABLE USER MODIFY(USER_AGE NUMBER(3));
+
+
+

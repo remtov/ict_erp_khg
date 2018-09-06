@@ -6,9 +6,9 @@ import java.util.List;
 import com.ict.erp.vo.MusicChart;
 
 public interface MusicService {
-	public List<MusicChart> selectMusicList(MusicChart menu) throws SQLException;
-	public MusicChart selectMusic(MusicChart menu) throws SQLException;
-	public int insertMusic(MusicChart menu) throws SQLException;
-	public int updateMusic(MusicChart menu) throws SQLException;
-	public int deleteMusic(MusicChart menu) throws SQLException;
+	public List<MusicChart> selectMusicList(MusicChart music) throws SQLException;
+	public MusicChart selectMusic(MusicChart music) throws SQLException;
+	public int insertMusic(MusicChart music) throws SQLException;
+	public int updateMusic(MusicChart music) throws SQLException;
+	public int deleteMusic(MusicChart music) throws SQLException;
 }

@@ -21,7 +21,7 @@
 			</tr>
 			<tr>
 				<th>가수</th>
-				<td><input type="password" name="mcSinger"></td>
+				<td><input type="text" name="mcSinger"></td>
 			</tr>
 			<tr>
 				<th>배급사</th>

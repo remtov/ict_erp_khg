@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ include file="/WEB-INF/views/common/common.jsp" %>
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/common/common.jsp"%>
 <body>
 <div id="wrapper">
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
@@ -19,7 +19,7 @@
 						<th>발매일</th>
 					</tr>
 				</thead>
-				<tbody id='menuTbody'>
+				<tbody id='musicTbody'>
 				<c:forEach items="${musicList}" var="music">
 					<tr>
 						<td>${music.mcNum}</td>
@@ -35,7 +35,10 @@
 				</tbody>				
 			</table>
 			<button data-page="/views/music/musicInsert">노래입력</button>
+		
 		</div>
 	</div>
 </div>
 <jsp:include page="/WEB-INF/views/menu/bottom.jsp" />
+
+

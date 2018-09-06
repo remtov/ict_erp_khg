@@ -17,14 +17,26 @@ String rPath = request.getContextPath();
                     <a href="<%=rPath%>/level/levelList">사원레벨관리</a>
                 </li>
                 <li>
-                    <a onclick="getHtml('<%=rPath%>/depart/departList')" href="#">부서관리</a>
+                     <a href="<%=rPath%>/depart/departList">부서관리</a>
                 </li>
+                
+                <li>
+                     <a href="<%=rPath%>/music/musicChart">뮤직챠트</a>
+                </li>
+                
+                <li>
+                     <a href="<%=rPath%>/ticketMovie/ticketMovieList">영화티켓</a>
+                </li>
+                
+ 
                 <li>
                     <a href="#">이력서</a>
                 </li>
+                
                 <li>
                     <a href="#">Git</a>
                 </li>
+                
                 <li>
                     <a href="#">Contact</a>
                 </li>

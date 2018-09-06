@@ -38,6 +38,7 @@
 					<td>${mi.miPhone}</td>
 				</tr>
 			</c:forEach>
+
 			</tbody>
 		</table>
 		<div>

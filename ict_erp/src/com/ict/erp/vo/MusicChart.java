@@ -22,6 +22,7 @@ public class MusicChart {
 		this.tests = tests;
 	}
 	public MusicChart() {}
+	
 	public MusicChart(Integer mcNum, String mcName, String mcSinger, String mcVendor, Integer mcLike, Integer mcDislike,
 			String mcCredat, String mcDesc) {
 		super();
