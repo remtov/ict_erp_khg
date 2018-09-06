@@ -6,7 +6,7 @@
 <script>
 	alert('${rMap.msg}');
 	if(${rMap.cnt}==1){
-	<!--	location.href="/member/memberList";-->
+		location.href="/member/memberList";
 	}
 </script>
 </c:if>
