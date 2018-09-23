@@ -15,8 +15,15 @@ import org.apache.commons.logging.LogFactory;
 
 import com.ict.erp.common.IBean;
 import com.ict.erp.common.ICTUtils;
+import com.ict.erp.service.DepartService;
+import com.ict.erp.service.LevelService;
+import com.ict.erp.service.MemberService;
 import com.ict.erp.service.MusicService;
+import com.ict.erp.service.impl.DepartServiceImpl;
+import com.ict.erp.service.impl.LevelServiceImpl;
+import com.ict.erp.service.impl.MemberServiceImpl;
 import com.ict.erp.service.impl.MusicServiceImpl;
+import com.ict.erp.vo.MemberInfo;
 import com.ict.erp.vo.MusicChart;
 /*
  * web.xml에 해당 서블릿이 등록 되어 있어야 함.
@@ -39,7 +46,8 @@ import com.ict.erp.vo.MusicChart;
   localhost이후부터 /music/ <--이 들어가 있으면 만족함.
  */
 public class MusicServlet extends HttpServlet {
-
+	
+	
 	private Log log = LogFactory.getLog(this.getClass());
 	private static final long serialVersionUID = 1L;
 	private String uri;
@@ -55,8 +63,8 @@ public class MusicServlet extends HttpServlet {
 		uri =  req.getRequestURI();
 		//클라이언트의 요청이 무엇인지 판단하기 위해 마지막 '/'를 기준으로 uri를 잘라준다.
 		String cmd = ICTUtils.getCmd(uri);
+		
 		try {
-			
 			MusicChart mc = IBean.parseRequest(req,MusicChart.class);
 
 			log.trace(mc);
@@ -72,6 +80,11 @@ public class MusicServlet extends HttpServlet {
 				req.setAttribute("musicList", musicList);
 				//해당 리스트를 포워딩할 jsp에서 포문을 돌리며 출력해주기위해
 				//musicList라는 키값을 저장한다.
+			}else if(cmd.equals("musicChartView")) {
+				String mcNumStr = req.getParameter("mcNum");
+				MusicChart mc2 = new MusicChart();
+				mc2.setMcNum(Integer.parseInt(mcNumStr));
+				req.setAttribute("music", ms.selectMusic(mc2));
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -95,6 +108,7 @@ public class MusicServlet extends HttpServlet {
 		uri =  req.getRequestURI();
 		//클라이언트의 요청이 무엇인지 판단하기 위해 마지막 '/'를 기준으로 uri를 잘라준다.
 		String cmd = ICTUtils.getCmd(uri);
+		
 		try {
 			MusicChart mc = IBean.parseRequest(req,MusicChart.class);
 			log.debug(mc);
@@ -102,7 +116,18 @@ public class MusicServlet extends HttpServlet {
 			if(cmd.equals("musicInsert")) {
 				//뮤직서비스에서 music목록을 인서트 함수를 호출해준다.
 				//cnt라는 키값으로 저장된 로우갯수를 저장한다.(1건일경우 1이여야 정상)
-				req.setAttribute("cnt", ms.insertMusic(mc));
+				req.setAttribute("rMap", ms.insertMusic(mc));
+							
+		
+			}else if(cmd.equals("musicChartUpdate")) {
+				req.setAttribute("rMap",ms.updateMusic(mc));
+				uri = "/music/musicChartView";
+			
+			}else if(cmd.equals("musicChartDelete")) {
+				MusicChart mi = new MusicChart();
+				mc.setMcNum(Integer.parseInt(req.getParameter("mcNum")));
+				req.setAttribute("rMap",ms.deleteMusic(mi));
+				uri = "/member/musicChartView";
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -117,6 +142,8 @@ public class MusicServlet extends HttpServlet {
 		// '/views'를 붙이는 이유는 ViewServlet을 호출하기 위해서임.
 		RequestDispatcher rd = req.getRequestDispatcher("/views" + uri);
 		rd.forward(req, res);
+		
+		
 	}
 
 }

@@ -32,9 +32,13 @@ public class MemberServlet extends HttpServlet {
 		try {
 			if(cmd.equals("memberList")) {
 				req.setAttribute("miList", ms.selectMiList(null));
+			
+			
 			}else if(cmd.equals("memberInsert")) {
 				req.setAttribute("liList", ls.getLiList(null));
 				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));
+			
+			
 			}else if(cmd.equals("memberView")) {
 				req.setAttribute("liList", ls.getLiList(null));
 				req.setAttribute("diList", ds.getDepartInfoNonePageList(null));
@@ -51,14 +55,17 @@ public class MemberServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		uri = req.getRequestURI();
 		String cmd = ICTUtils.getCmd(uri);
-		try {
+		try {			
+			
 			if(cmd.equals("memberInsert")) {
 				MemberInfo mi = ICTUtils.parse(req, MemberInfo.class);
 				req.setAttribute("rMap",ms.insertMi(mi));
+		
 			}else if(cmd.equals("memberUpdate")) {
 				MemberInfo mi = ICTUtils.parse(req, MemberInfo.class);
 				req.setAttribute("rMap",ms.updateMi(mi));
 				uri = "/member/memberView";
+		
 			}else if(cmd.equals("memberDelete")) {
 				MemberInfo mi = new MemberInfo();
 				mi.setMiNum(Long.parseLong(req.getParameter("miNum")));

@@ -29,6 +29,7 @@ import com.ict.erp.service.impl.TicketMovieServiceImpl;
 import com.ict.erp.vo.TicketMovie;
 
 public class TicketMovieServlet extends HttpServlet {
+
 	private TicketMovieService ts = new TicketMovieServiceImpl();
 	private Log log = LogFactory.getLog(this.getClass());
 	private static final long serialVersionUID = 1L;
@@ -38,7 +39,7 @@ public class TicketMovieServlet extends HttpServlet {
 	private static final int UP_FILE_SIZE = 1024 * 1024 * 20;// 20MB
 
 	private static final File TEMP_REPOSITORY = new File(System.getProperty("java.io.tmpdir"));
-	private static final String UP_PATH = "C:\\jsp_studyKHG\\workspace\\git\\ict_erp_khg\\ict_erpKHG\\WebContent";
+	private static final String UP_PATH = "C:\\jsp_study\\workspace\\git\\ict_erp_khg\\ict_erpkhg\\WebContent";
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		uri = "/views" + req.getRequestURI();
@@ -56,18 +57,21 @@ public class TicketMovieServlet extends HttpServlet {
 	public static Map<String, Object> parseRequest(HttpServletRequest req)
 			throws ServletException, FileUploadException, UnsupportedEncodingException {
 		Map<String, Object> rMap = new HashMap<String, Object>();
+
 		if (!ServletFileUpload.isMultipartContent(req)) {
 			throw new ServletException("폼 인크립트가 파일업로드에 적합하지 않습니다.");
 		}
-		DiskFileItemFactory dfFactory = new DiskFileItemFactory(THRESHOLD_SIZE, TEMP_REPOSITORY);
 
+		DiskFileItemFactory dfFactory = new DiskFileItemFactory(THRESHOLD_SIZE, TEMP_REPOSITORY);
 		ServletFileUpload sfu = new ServletFileUpload(dfFactory);
+
 		sfu.setHeaderEncoding("utf-8");
 		sfu.setSizeMax(UP_TOTAL_SIZE);
 		sfu.setFileSizeMax(UP_FILE_SIZE);
 		List<FileItem> fList = sfu.parseRequest(req);
 		Map<String, String> params = new HashMap<String, String>();
 		List<FileItem> saveList = new ArrayList<FileItem>();
+
 		for (FileItem fi : fList) {
 			if (fi.isFormField()) {
 				params.put(fi.getFieldName(), fi.getString("utf-8"));

@@ -25,8 +25,14 @@ public class TicketMovieServiceImpl implements TicketMovieService {
 
 	@Override
 	public TicketMovie selectTicketMovie(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		tmdao.setConnection(DBCon.getCon());
+		try {
+			return tmdao.selectTicketMovie(tm);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
 	}
 
 	@Override
@@ -43,14 +49,27 @@ public class TicketMovieServiceImpl implements TicketMovieService {
 
 	@Override
 	public int updateTicketMovie(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		tmdao.setConnection(DBCon.getCon());
+		try {
+			return tmdao.updateTicketMovie(tm);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
 	}
 
 	@Override
 	public int deleteTicketMovie(TicketMovie tm) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		tmdao.setConnection(DBCon.getCon());
+		try {
+			return tmdao.deleteTicketMovie(tm);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
 	}
+
 
 }

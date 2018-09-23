@@ -12,16 +12,17 @@ public class MusicChart {
 	private Integer mcDislike;
 	private String mcCredat;
 	private String mcDesc;
-	private String[] tests;
-	
+	// private String[] tests;
 
-	public String[] getTests() {
-		return tests;
+	// public String[] getTests() {
+	// return tests;
+	// }
+	// public void setTests(String[] tests) {
+	// this.tests = tests;
+	// }
+	public MusicChart() {
 	}
-	public void setTests(String[] tests) {
-		this.tests = tests;
-	}
-	public MusicChart() {}
+
 	public MusicChart(Integer mcNum, String mcName, String mcSinger, String mcVendor, Integer mcLike, Integer mcDislike,
 			String mcCredat, String mcDesc) {
 		super();
@@ -34,60 +35,78 @@ public class MusicChart {
 		this.mcCredat = mcCredat;
 		this.mcDesc = mcDesc;
 	}
+
 	public Integer getMcNum() {
 		return mcNum;
 	}
+
 	public void setMcNum(Integer mcNum) {
 		this.mcNum = mcNum;
 	}
+
 	public String getMcName() {
 		return mcName;
 	}
+
 	public void setMcName(String mcName) {
 		this.mcName = mcName;
 	}
+
 	public String getMcSinger() {
 		return mcSinger;
 	}
+
 	public void setMcSinger(String mcSinger) {
 		this.mcSinger = mcSinger;
 	}
+
 	public String getMcVendor() {
 		return mcVendor;
 	}
+
 	public void setMcVendor(String mcVendor) {
 		this.mcVendor = mcVendor;
 	}
+
 	public Integer getMcLike() {
 		return mcLike;
 	}
+
 	public void setMcLike(Integer mcLike) {
 		this.mcLike = mcLike;
 	}
+
 	public Integer getMcDislike() {
 		return mcDislike;
 	}
+
 	public void setMcDislike(Integer mcDislike) {
 		this.mcDislike = mcDislike;
 	}
+
 	public String getMcCredat() {
 		return mcCredat;
 	}
+
 	public void setMcCredat(String mcCredat) {
 		this.mcCredat = mcCredat;
 	}
+
 	public String getMcDesc() {
 		return mcDesc;
 	}
+
 	public void setMcDesc(String mcDesc) {
 		this.mcDesc = mcDesc;
 	}
+
 	@Override
 	public String toString() {
 		return "MusicChart [mcNum=" + mcNum + ", mcName=" + mcName + ", mcSinger=" + mcSinger + ", mcVendor=" + mcVendor
 				+ ", mcLike=" + mcLike + ", mcDislike=" + mcDislike + ", mcCredat=" + mcCredat + ", mcDesc=" + mcDesc
-				+ ", tests=" + Arrays.toString(tests) + "]";
+				+ "]";
 	}
-	
-	
+
+	// + ", tests=" + Arrays.toString(tests)
+
 }

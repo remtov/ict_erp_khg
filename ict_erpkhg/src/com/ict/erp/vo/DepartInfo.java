@@ -15,7 +15,7 @@ public class DepartInfo {
 	}
 	public DepartInfo() {}
 	
-	public DepartInfo(Long diNum, String diCode, String diName, String diDesci) {
+	public DepartInfo(Long diNum, String diCode, String diName, String diDesc) {
 		super();
 		this.diNum = diNum;
 		this.diCode = diCode;

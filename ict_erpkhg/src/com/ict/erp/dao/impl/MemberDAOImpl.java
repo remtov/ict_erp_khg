@@ -12,15 +12,15 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 
 	@Override
 	public List<MemberInfo> selectMiList(MemberInfo mi) throws SQLException {
-		String sql = "SELECT mi.*, di.diname, li.liname from "
-				+ "MEMBER_INFO mi, DEPART_INFO di, LEVEL_INFO li "
-				+ "where mi.dicode = di.dicode "
-				+ "and mi.LILEVEL = li.LIlevel ";
+		String sql = "SELECT mi.*, di.diname, li.liname from " + "MEMBER_INFO mi, DEPART_INFO di, LEVEL_INFO li "
+				+ "where mi.dicode = di.dicode " + "and mi.LILEVEL = li.LIlevel ";
 		List<MemberInfo> miList = new ArrayList<MemberInfo>();
+
 		try {
 			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();
-			while(rs.next()) {
+
+			while (rs.next()) {
 				MemberInfo mmi = new MemberInfo();
 				mmi.setDiCode(rs.getString("diCode"));
 				mmi.setLiLevel(rs.getLong("liLevel"));
@@ -36,42 +36,43 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 				mmi.setMiZipcode(rs.getString("miZipcode"));
 				mmi.setLiName(rs.getString("liName"));
 				mmi.setDiName(rs.getString("diName"));
-				miList.add(mmi); 
+				miList.add(mmi);
 			}
 			return miList;
-		}catch(SQLException e) {
+
+		} catch (SQLException e) {
 			throw e;
-		}finally {
+		} finally {
 			close();
 		}
 	}
 
-	public static void main(String[] args) {
-		MemberDAO mdao = new MemberDAOImpl();
-		mdao.setConnection(DBCon.getCon());
-		try {
-			if(mdao.selectMiList(null).size()==0) {
-				System.out.println("성공");
-			}
-		}catch(SQLException e) {
-			e.printStackTrace();
-		}
-	}
+	// public static void main(String[] args) {
+	// MemberDAO mdao = new MemberDAOImpl();
+	// mdao.setConnection(DBCon.getCon());
+	// try {
+	// if(mdao.selectMiList(null).size()==0) {
+	// System.out.println("성공");
+	// }
+	// }catch(SQLException e) {
+	// e.printStackTrace();
+	// }
+	// }
 
 	@Override
 	public int insertMi(MemberInfo mi) throws SQLException {
-		String sql = "insert into member_info(MINUM,\r\n" + 
-				"MIID,\r\n" + 
-				"MINAME,\r\n" + 
-				"MIPWD,\r\n" + 
-				"DICODE,\r\n" + 
-				"MIEMAIL,\r\n" + 
-				"MIDESC,\r\n" + 
-				"MIPHONE,\r\n" + 
-				"MIZIPCODE,\r\n" + 
-				"MIADDRESS1,\r\n" + 
-				"MIADDRESS2,\r\n" + 
-				"LILEVEL)";
+		String sql = "insert into member_info(MINUM,\r\n" 
+				+ "MIID,\r\n" 
+				+ "MINAME,\r\n" 
+				+ "MIPWD,\r\n" 
+				+ "DICODE,\r\n"
+				+ "MIEMAIL,\r\n" 
+				+ "MIDESC,\r\n" 
+				+ "MIPHONE,\r\n" 
+				+ "MIZIPCODE,\r\n" 
+				+ "MIADDRESS1,\r\n"
+				+ "MIADDRESS2,\r\n" 
+				+ "LILEVEL)";
 		sql += "values(seq_minum.nextval,?,?,?,?,?,?,?,?,?,?,?)";
 		try {
 			ps = con.prepareStatement(sql);
@@ -87,26 +88,16 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 			ps.setString(10, mi.getMiAddress2());
 			ps.setLong(11, mi.getLiLevel());
 			return ps.executeUpdate();
-		}catch(SQLException e) {
+		} catch (SQLException e) {
 			throw e;
 		}
 	}
 
 	@Override
-	public int updateMi(MemberInfo mi) throws SQLException{
-		String sql = "update member_info"
-				+ " set " + 
-				"MIID=?,\r\n" + 
-				"MINAME=?,\r\n" + 
-				"MIPWD=?,\r\n" + 
-				"DICODE=?,\r\n" + 
-				"MIEMAIL=?,\r\n" + 
-				"MIDESC=?,\r\n" + 
-				"MIPHONE=?,\r\n" + 
-				"MIZIPCODE=?,\r\n" + 
-				"MIADDRESS1=?,\r\n" + 
-				"MIADDRESS2=?,\r\n" + 
-				"LILEVEL=? where miNum=?";
+	public int updateMi(MemberInfo mi) throws SQLException {
+		String sql = "update member_info" + " set " + "MIID=?,\r\n" + "MINAME=?,\r\n" + "MIPWD=?,\r\n" + "DICODE=?,\r\n"
+				+ "MIEMAIL=?,\r\n" + "MIDESC=?,\r\n" + "MIPHONE=?,\r\n" + "MIZIPCODE=?,\r\n" + "MIADDRESS1=?,\r\n"
+				+ "MIADDRESS2=?,\r\n" + "LILEVEL=? where miNum=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, mi.getMiId());
@@ -122,33 +113,32 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 			ps.setLong(11, mi.getLiLevel());
 			ps.setLong(12, mi.getMiNum());
 			return ps.executeUpdate();
-		}catch(SQLException e) {
+		} catch (SQLException e) {
 			throw e;
 		}
 	}
 
 	@Override
-	public int deleteMi(MemberInfo mi)throws SQLException {
+	public int deleteMi(MemberInfo mi) throws SQLException {
 		String sql = "delete from member_info where miNum=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setLong(1, mi.getMiNum());
 			return ps.executeUpdate();
-		}catch(SQLException e) {
+		} catch (SQLException e) {
 			throw e;
 		}
 	}
 
 	@Override
 	public MemberInfo selectMemberInfo(MemberInfo mi) throws SQLException {
-		String sql = "SELECT * from "
-				+ " MEMBER_INFO mi"
-				+ " where miNum=? ";
+		String sql = "SELECT * from " + " MEMBER_INFO mi" + " where miNum=? ";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setLong(1, mi.getMiNum());
+
 			rs = ps.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				MemberInfo mmi = new MemberInfo();
 				mmi.setDiCode(rs.getString("diCode"));
 				mmi.setLiLevel(rs.getLong("liLevel"));
@@ -162,16 +152,14 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 				mmi.setMiPhone(rs.getString("miPhone"));
 				mmi.setMiPwd(rs.getString("miPwd"));
 				mmi.setMiZipcode(rs.getString("miZipcode"));
-				return mmi; 
+				return mmi;
 			}
-		}catch(SQLException e) {
+		} catch (SQLException e) {
 			throw e;
-		}finally {
+		} finally {
 			close();
 		}
 		return null;
 	}
-
-
 
 }

@@ -19,11 +19,12 @@
 						<th>포스터</th>
 					</tr>
 				</thead>
-				<tbody id='menuTbody'>
+				<tbody>
 				<c:forEach items="${tmList}" var="tm">
 					<tr>
 						<td>${tm.tmNum}</td>
-						<td>${tm.tmName}</td>
+							<td><a href="/ticketMovice/ticketMovieView?tmNum=${tm.tmNum}">${tm.tmName}</a></td>
+						<!-- td>${tm.tmName}</td -->
 						<td>${tm.tmPrice}</td>
 						<td>${tm.tmStartdat}</td>
 						<td>${tm.tmEnddat}</td>

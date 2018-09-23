@@ -6,10 +6,10 @@ import java.util.List;
 import com.ict.erp.vo.MusicChart;
 
 public interface MusicDAO extends CommonDAO{
-	public List<MusicChart> selectMusicList(MusicChart menu) throws SQLException;
-	public MusicChart selectMusic(MusicChart menu) throws SQLException;
-	public int insertMusic(MusicChart menu) throws SQLException;
-	public int updateMusic(MusicChart menu) throws SQLException;
-	public int deleteMusic(MusicChart menu) throws SQLException;
+	public List<MusicChart> selectMusicList(MusicChart mc) throws SQLException;
+	public MusicChart selectMusic(MusicChart mc) throws SQLException;
+	public int insertMusic(MusicChart mc) throws SQLException;
+	public int updateMusic(MusicChart mc) throws SQLException;
+	public int deleteMusic(MusicChart mc) throws SQLException;
 
 }

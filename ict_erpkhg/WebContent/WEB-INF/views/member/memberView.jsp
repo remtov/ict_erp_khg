@@ -9,6 +9,7 @@
 		location.href="/member/memberList";
 	}
 </script>
+
 </c:if>
 <div id="wrapper">
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
@@ -74,7 +75,7 @@
 				<td><input type="text" name="miDesc" value="${member.miDesc}"></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>부서수정</button> <button data-action="/member/memberDelete">부서삭제</button></td>
+				<td colspan="2"><button>사원수정</button> <button data-action="/member/memberDelete">사원삭제</button></td>
 			</tr>
 		</table>
 		<input type="hidden" name="miNum" value="${member.miNum}">
