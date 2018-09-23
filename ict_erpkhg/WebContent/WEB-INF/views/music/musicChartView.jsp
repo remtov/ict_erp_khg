@@ -43,7 +43,7 @@
 					</tr>
 					<tr>
 						<th>발매일</th>
-						<td><input type="text" name="mcCredat"
+						<td><input type="date" name="mcCredat"
 							value="${music.mcCredat}"></td>
 					</tr>
 					<tr>
