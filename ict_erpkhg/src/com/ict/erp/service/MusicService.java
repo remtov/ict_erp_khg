@@ -7,9 +7,13 @@ import java.util.Map;
 import com.ict.erp.vo.MusicChart;
 
 public interface MusicService {
-	public List<MusicChart> selectMusicList(MusicChart mc) throws SQLException;
-	public MusicChart selectMusic(MusicChart mc) throws SQLException;
-	public Map<String, Object> insertMusic(MusicChart mc) throws SQLException;
-	public Map<String, Object> updateMusic(MusicChart mc) throws SQLException;
-	public Map<String, Object> deleteMusic(MusicChart mc) throws SQLException;
+	public List<MusicChart> selectMcList(MusicChart mc) throws SQLException;
+
+	public MusicChart selectMc(MusicChart mc) throws SQLException;
+
+	public Map<String, Object> insertMc(MusicChart mc) throws SQLException;
+
+	public Map<String, Object> updateMc(MusicChart mc) throws SQLException;
+
+	public Map<String, Object> deleteMc(MusicChart mc) throws SQLException;
 }

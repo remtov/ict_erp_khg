@@ -6,7 +6,7 @@
 <jsp:include page="/WEB-INF/views/menu/left.jsp" />
 	<div id="page-content-wrapper">
 		<%
-			out.println("요청하신 주소는 존재하지 않습니다.<br>");
+			out.println("404. not found this page.<br>");
 		%>
 	</div>
 </div>

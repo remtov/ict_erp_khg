@@ -39,7 +39,7 @@ public class JsonServlet extends HttpServlet {
 		
 		List<MusicChart> musicList;
 		try {
-			musicList = ms.selectMusicList(null);
+			musicList = ms.selectMcList(null);
 			String resStr =gs.toJson(musicList);
 			pw.println(resStr);
 		} catch (SQLException e) {
@@ -60,7 +60,7 @@ public class JsonServlet extends HttpServlet {
 		
 		
 		try {
-			List<MusicChart> musicList = ms.selectMusicList(null);
+			List<MusicChart> musicList = ms.selectMcList(null);
 			String resStr =gs.toJson(musicList);
 			pw.println(resStr);
 		} catch (SQLException e) {

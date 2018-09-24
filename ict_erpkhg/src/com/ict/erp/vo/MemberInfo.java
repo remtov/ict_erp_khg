@@ -15,6 +15,7 @@ public class MemberInfo {
 	private String miAddress2;
 	private String liName;
 	private String diName;
+	
 	private PageInfo pi;
 	
 	public PageInfo getPi() {

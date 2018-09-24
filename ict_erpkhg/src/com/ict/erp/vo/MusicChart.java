@@ -1,17 +1,24 @@
 package com.ict.erp.vo;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class MusicChart {
-	private Integer mcNum;
+	private Long mcNum;
 	private String mcName;
 	private String mcSinger;
 	private String mcVendor;
-	private Integer mcLike;
-	private Integer mcDislike;
+	private Long mcLike;
+	private Long mcDislike;
 	private String mcCredat;
 	private String mcDesc;
+
+	private PageInfo pi;
+
+	public PageInfo getPi() {
+		return pi;
+	}
+
+	public void setPi(PageInfo pi) {
+		this.pi = pi;
+	}
 	// private String[] tests;
 
 	// public String[] getTests() {
@@ -23,7 +30,7 @@ public class MusicChart {
 	public MusicChart() {
 	}
 
-	public MusicChart(Integer mcNum, String mcName, String mcSinger, String mcVendor, Integer mcLike, Integer mcDislike,
+	public MusicChart(Long mcNum, String mcName, String mcSinger, String mcVendor, Long mcLike, Long mcDislike,
 			String mcCredat, String mcDesc) {
 		super();
 		this.mcNum = mcNum;
@@ -36,11 +43,11 @@ public class MusicChart {
 		this.mcDesc = mcDesc;
 	}
 
-	public Integer getMcNum() {
+	public Long getMcNum() {
 		return mcNum;
 	}
 
-	public void setMcNum(Integer mcNum) {
+	public void setMcNum(Long mcNum) {
 		this.mcNum = mcNum;
 	}
 
@@ -68,19 +75,19 @@ public class MusicChart {
 		this.mcVendor = mcVendor;
 	}
 
-	public Integer getMcLike() {
+	public Long getMcLike() {
 		return mcLike;
 	}
 
-	public void setMcLike(Integer mcLike) {
+	public void setMcLike(Long mcLike) {
 		this.mcLike = mcLike;
 	}
 
-	public Integer getMcDislike() {
+	public Long getMcDislike() {
 		return mcDislike;
 	}
 
-	public void setMcDislike(Integer mcDislike) {
+	public void setMcDislike(Long mcDislike) {
 		this.mcDislike = mcDislike;
 	}
 

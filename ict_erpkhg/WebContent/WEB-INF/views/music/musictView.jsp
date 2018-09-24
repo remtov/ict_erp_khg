@@ -1,19 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/common.jsp"%>
+
 <body>
 	<c:if test="${!empty rMap }">
 		<script>
-			alert('${rMap.msg}');
-			if(${rMap.cnt}==1){
-			location.href="/music/musicList";
-			}
-		</script>
+	alert('${rMap.msg}');
+	if(${rMap.cnt}==1){
+		location.href="/music/musicList";
+	}
+</script>
 	</c:if>
+
 	<div id="wrapper">
 		<jsp:include page="/WEB-INF/views/menu/left.jsp" />
 		<div id="page-content-wrapper">
-			<form action="/music/musicChartUpdate" method="post">
+
+			<form action="/music/musicUpdate" method="post">
 				<table class="table table-bordered">
 
 					<tr>
@@ -53,9 +56,10 @@
 
 					<tr>
 						<td colspan="2"><button>노래수정</button>
-							<button data-action="/music/musicChartDelete">노래삭제</button></td>
+							<button data-action="/music/musicDelete">노래삭제</button></td>
 					</tr>
 				</table>
+
 				<input type="hidden" name="mcNum" value="${music.mcNum}">
 			</form>
 		</div>

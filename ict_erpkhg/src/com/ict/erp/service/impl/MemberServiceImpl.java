@@ -13,6 +13,7 @@ import com.ict.erp.vo.MemberInfo;
 
 public class MemberServiceImpl implements MemberService {
 	private MemberDAO mdao = new MemberDAOImpl();
+	
 	@Override
 	
 	public List<MemberInfo> selectMiList(MemberInfo mi) throws SQLException {

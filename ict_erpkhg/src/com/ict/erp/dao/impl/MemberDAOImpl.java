@@ -95,9 +95,19 @@ public class MemberDAOImpl extends CommonDAOImpl implements MemberDAO {
 
 	@Override
 	public int updateMi(MemberInfo mi) throws SQLException {
-		String sql = "update member_info" + " set " + "MIID=?,\r\n" + "MINAME=?,\r\n" + "MIPWD=?,\r\n" + "DICODE=?,\r\n"
-				+ "MIEMAIL=?,\r\n" + "MIDESC=?,\r\n" + "MIPHONE=?,\r\n" + "MIZIPCODE=?,\r\n" + "MIADDRESS1=?,\r\n"
-				+ "MIADDRESS2=?,\r\n" + "LILEVEL=? where miNum=?";
+		String sql = "update member_info" 
+				+ " set " 
+				+ "MIID=?,\r\n" 
+				+ "MINAME=?,\r\n" 
+				+ "MIPWD=?,\r\n" 
+				+ "DICODE=?,\r\n"
+				+ "MIEMAIL=?,\r\n" 
+				+ "MIDESC=?,\r\n" 
+				+ "MIPHONE=?,\r\n" 
+				+ "MIZIPCODE=?,\r\n" 
+				+ "MIADDRESS1=?,\r\n"
+				+ "MIADDRESS2=?,\r\n" 
+				+ "LILEVEL=? where miNum=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, mi.getMiId());

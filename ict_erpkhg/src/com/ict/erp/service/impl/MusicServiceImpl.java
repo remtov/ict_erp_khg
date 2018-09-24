@@ -15,6 +15,93 @@ public class MusicServiceImpl implements MusicService {
 	private MusicDAO mdao = new MusicDAOImpl();
 
 	@Override
+	public List<MusicChart> selectMcList(MusicChart mc) throws SQLException {
+		mdao.setConnection(DBCon.getCon());
+		try {
+			return mdao.selectMcList(mc);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+
+	@Override
+	public MusicChart selectMc(MusicChart mc) throws SQLException {
+		mdao.setConnection(DBCon.getCon());
+		try {
+			return mdao.selectMusicChart(mc);
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+
+	@Override
+	public Map<String, Object> insertMc(MusicChart mc) throws SQLException {
+		// TODO Auto-generated method stub
+		mdao.setConnection(DBCon.getCon());
+		try {
+			int cnt = mdao.insertMc(mc);
+			Map<String,Object> rMap = new HashMap<String,Object>();
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "노래 등록 실패");
+			if(cnt==1) {
+				rMap.put("msg", "노래 등록 성공");
+			}
+			return rMap;
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+
+	@Override
+	public Map<String, Object> updateMc(MusicChart mc) throws SQLException {
+		// TODO Auto-generated method stub
+		mdao.setConnection(DBCon.getCon());
+		try {
+			int cnt = mdao.updateMc(mc);
+			Map<String,Object> rMap = new HashMap<String,Object>();
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "노래 수정 실패");
+			if(cnt==1) {
+				rMap.put("msg", "노래 수정 성공");
+			}
+			return rMap;
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+
+	@Override
+	public Map<String, Object> deleteMc(MusicChart mc) throws SQLException {
+		// TODO Auto-generated method stub
+		mdao.setConnection(DBCon.getCon());
+		try {
+			int cnt = mdao.deleteMc(mc);
+			Map<String,Object> rMap = new HashMap<String,Object>();
+			rMap.put("cnt", cnt);
+			rMap.put("msg", "노래 삭제 실패");
+			if(cnt==1) {
+				rMap.put("msg", "노래 삭제 성공");
+			}
+			return rMap;
+		}catch(SQLException e) {
+			throw e;
+		}finally {
+			DBCon.close();
+		}
+	}
+	
+}
+	/*private MusicDAO mdao = new MusicDAOImpl();
+
+	@Override
 	public List<MusicChart> selectMusicList(MusicChart mc) throws SQLException {
 		try {
 			mdao.setConnection(DBCon.getCon());
@@ -97,3 +184,4 @@ public class MusicServiceImpl implements MusicService {
 	}
 
 }
+*/

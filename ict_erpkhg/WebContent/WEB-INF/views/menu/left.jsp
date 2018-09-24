@@ -21,11 +21,11 @@ String rPath = request.getContextPath();
                 </li>
                 
                 <li>
-                     <a href="<%=rPath%>/music/musicChart">뮤직챠트</a>
+                     <a href="<%=rPath%>/music/musicList">뮤직챠트</a>
                 </li>
                 
                 <li>
-                     <a href="<%=rPath%>/ticketMovie/ticketMovieList">영화티켓</a>
+                     <a href="<%=rPath%>/ticket/ticketList">영화티켓</a>
                 </li>
                 
  
